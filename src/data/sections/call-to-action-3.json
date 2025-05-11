@@ -1,0 +1,11 @@
+{
+    "heading": {
+        "text": "Start your next <br>project",
+        "button": "now",
+        "link": "/contact"
+    },
+    "button": {
+        "label": "Get in touch",
+        "link": "/contact"
+    }
+}

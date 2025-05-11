@@ -1,0 +1,15 @@
+{
+    "description": "Since we started, our greatest motivation was and is and will continue to be the satisfaction of our customers. Our creations are constantly studying new solutions for you.",
+    "items": [
+        {
+            "num": "1800",
+            "numAfter": "+",
+            "label": "Interactions per day"
+        },
+        {
+            "num": "530",
+            "numAfter": "+",
+            "label": "Comments per day"
+        }
+    ]
+}

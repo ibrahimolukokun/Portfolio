@@ -1,0 +1,26 @@
+{
+    "title": "Like them, for your Company too",
+    "description": "We offer the highest quality and creativity for each project we do for each of our clients, our goal is to make your sales grow to the next level.",
+    "button": {
+        "label" : "See All",
+        "link": "/about"
+    },
+    "items": [
+        {
+            "image": "/img/brands/1.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/brands/2.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/brands/3.png",
+            "alt": "logo"
+        },
+        {
+            "image": "/img/brands/4.png",
+            "alt": "logo"
+        }
+    ]
+}

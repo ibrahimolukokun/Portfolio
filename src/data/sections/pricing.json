@@ -1,0 +1,88 @@
+{
+    "items": [
+        {
+            "title": "Basic",
+            "price": {
+                "before": "$",
+                "value": "29",
+                "valuePerYear": "299",
+                "after": " / mo"
+            },
+            "list": [
+                {
+                    "value": "1 Home Page designed"
+                },
+                {
+                    "value": "3 Inside pages"
+                },
+                {
+                    "value": "Does not integrate e-commerce"
+                },
+                {
+                    "value": "Access to support"
+                }
+            ],
+            "button": {
+                "link": "/contact",
+                "label": "Continue"
+            },
+            "popular": 0
+        },
+        {
+            "title": "Medium",
+            "price": {
+                "before": "$",
+                "value": "49",
+                "valuePerYear": "499",
+                "after": " / mo"
+            },
+            "list": [
+                {
+                    "value": "2 Page designed"
+                },
+                {
+                    "value": "6 Inside pages"
+                },
+                {
+                    "value": "Integrated with e-commerce"
+                },
+                {
+                    "value": "Access to support"
+                }
+            ],
+            "button": {
+                "link": "/contact",
+                "label": "Continue"
+            },
+            "popular": 1
+        },
+        {
+            "title": "Business",
+            "price": {
+                "before": "$",
+                "value": "99",
+                "valuePerYear": "999",
+                "after": " / mo"
+            },
+            "list": [
+                {
+                    "value": "3 Landing Pages"
+                },
+                {
+                    "value": "15 Inside pages"
+                },
+                {
+                    "value": "Integrated with e-commerce"
+                },
+                {
+                    "value": "Access to support"
+                }
+            ],
+            "button": {
+                "link": "/contact",
+                "label": "Continue"
+            },
+            "popular": 0
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "subtitle": "My specializations",
+    "title": "Some tools I use <br>every day",
+    "description": "Each project is carefully done with these digital tools, which help us show a finished project thinking of every possible detail.",
+    "items": [
+        {
+            "num": 90,
+            "numAfter": "%",
+            "label": "HTML & CSS",
+            "text": "We are redesigning the website clearing websites and we are already in the final phase"
+        },
+        {
+            "num": 60,
+            "numAfter": "%",
+            "label": "Adobe PhotoShop",
+            "text": "More than 200 websites built with the highest quality standards and advanced features."
+        }
+    ]
+}

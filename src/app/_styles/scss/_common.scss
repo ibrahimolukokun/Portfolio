@@ -1,0 +1,970 @@
+@use 'variables';
+
+/* -------------------------------------------
+
+main
+
+------------------------------------------- */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: variables.$d1;
+    font-family: variables.$font-1;
+    color: variables.$l2;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.mil-page-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.mil-logo {
+    color: variables.$l1;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+
+    &:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: variables.$a;
+        margin-left: 5px;
+    }
+}
+
+.mil-soft-section {
+    background-color: variables.$d2;
+}
+
+.mil-accent-section {
+    background-color: variables.$a;
+}
+
+.mil-out-section {
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        background-color: inherit;
+        display: block;
+        width: 120px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    &:before {
+        right: -119px;
+    }
+
+    &:after {
+        left: -119px;
+    }
+}
+
+/* -------------------------------------------
+
+settings
+
+------------------------------------------- */
+
+.mil-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.mil-df {
+    display: flex;
+}
+
+.mil-aic {
+    display: flex;
+    align-items: center;
+}
+
+.mil-aie {
+    display: flex;
+    align-items: flex-end;
+}
+
+.mil-ais {
+    display: flex;
+    align-items: flex-start;
+}
+
+.mil-jcc {
+    display: flex;
+    justify-content: center;
+}
+
+.mil-jce {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mil-jcs {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mil-jcb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mil-tac {
+    text-align: center;
+}
+
+.mil-tar {
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .mil-992-jcs {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mil-992-jcc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mil-992-tac {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .mil-768-jcc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mil-768-tac {
+        text-align: center;
+    }
+
+    .mil-768-tal {
+        text-align: left;
+    }
+}
+
+/* -------------------------------------------
+
+typography
+
+------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: variables.$l1;
+    line-height: 110%;
+    font-weight: 600;
+}
+
+.mil-text {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+
+.mil-fs14 {
+    font-size: 14px;
+}
+
+.mil-fs16 {
+    font-size: 16px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.mil-fs18 {
+    font-size: 18px;
+}
+
+.mil-fs20 {
+    font-size: 20px;
+}
+
+.mil-fs26 {
+    font-size: 26px;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.mil-fs30 {
+    font-size: 30px;
+
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
+}
+
+
+.mil-fs42 {
+    font-size: 42px;
+
+    @media (max-width: 992px) {
+        font-size: 38px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.mil-fs68 {
+    font-size: 68px;
+
+    @media (max-width: 992px) {
+        font-size: 58px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 48px;
+    }
+}
+
+.mil-light {
+    color: variables.$l1;
+}
+
+.mil-dark {
+    color: variables.$d1;
+}
+
+.mil-soft {
+    color: variables.$l2;
+}
+
+.mil-accent {
+    color: variables.$a;
+}
+
+.mil-thin {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+blockquote {
+    position: relative;
+    padding-left: 60px;
+
+    &:before {
+        content: '"';
+        display: block;
+        font-style: italic;
+        position: absolute;
+        top: 0;
+        left: -5px;
+        font-size: 92px;
+        padding-top: 30px;
+        color: variables.$a;
+    }
+
+    & span {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+.mil-group-text {
+    display: flex;
+    align-items: center;
+    line-height: 90%;
+
+    & * {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.mil-bg-text {
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: variables.$l1;
+    padding-top: 20px;
+}
+
+.mil-suptitle {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* -------------------------------------------
+
+cursor
+
+------------------------------------------- */
+.mil-cursor-follower {
+    margin-top: -1.4%;
+    margin-left: -.9%;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(variables.$l1, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    user-select: none;
+    pointer-events: none;
+    z-index: 9999999;
+    transition: transform 0.4s cubic-bezier(0.75, -1, 0.3, 2.33), background-color variables.$tmd;
+
+    &:after {
+        content: 'iiiiii';
+        min-height: 7px;
+        min-width: 50px;
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        opacity: 0;
+        transform: scale(0);
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: variables.$d1;
+        transition: variables.$tsm;
+        transition-delay: 0s;
+    }
+
+    &.mil-dark-active,
+    &.mil-gone-active,
+    &.mil-view-active,
+    &.mil-next-active,
+    &.mil-read-active,
+    &.mil-swipe-active {
+        background-color: variables.$a;
+        transform: scale(3);
+        filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.25));
+
+        &:after {
+            transition-delay: .2s;
+            opacity: 1;
+            transform: scale(.33);
+        }
+    }
+
+    &.mil-dark-active {
+        background-color: variables.$d1;
+
+        &:after {
+            color: variables.$l1;
+            filter: #{"invert(80%)"};
+        }
+    }
+
+    &.mil-gone-active {
+        background-color: rgba(variables.$l1, 0.1);
+        transform: scale(0);
+
+        &:after {
+            content: '.';
+        }
+    }
+
+    &.mil-next-active {
+        &:after {
+            content: 'next';
+        }
+    }
+
+
+    &.mil-view-active {
+        &:after {
+            content: 'view';
+        }
+    }
+
+    &.mil-read-active {
+        &:after {
+            content: 'read';
+        }
+    }
+
+    &.mil-swipe-active {
+        &:after {
+            content: url('data:image/svg+xml,<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.4364 14.3667C29.4101 14.342 29.3824 14.3188 29.3535 14.2972L24.653 9.59663C24.5636 9.50467 24.4568 9.4314 24.3389 9.38106C24.2209 9.33073 24.0941 9.30434 23.9659 9.30344C23.8376 9.30253 23.7105 9.32712 23.5918 9.37578C23.4732 9.42444 23.3654 9.4962 23.2747 9.58689C23.184 9.67757 23.1122 9.78538 23.0636 9.90404C23.0149 10.0227 22.9903 10.1498 22.9912 10.2781C22.9921 10.4063 23.0185 10.5331 23.0688 10.6511C23.1192 10.7691 23.1925 10.8758 23.2844 10.9652L26.4226 14.1034L3.72315 14.1034L6.86129 10.9652C6.9541 10.8749 7.02784 10.7669 7.07815 10.6476C7.12846 10.5283 7.15432 10.4001 7.1542 10.2706C7.15408 10.1411 7.12797 10.013 7.07743 9.89378C7.02688 9.77456 6.95293 9.6667 6.85996 9.57659C6.67587 9.39817 6.42852 9.30007 6.17218 9.30383C5.91585 9.30759 5.67147 9.41289 5.4927 9.59663L0.806869 14.2825C0.68112 14.372 0.578597 14.4902 0.507853 14.6274C0.43711 14.7646 0.400197 14.9167 0.400197 15.071C0.400197 15.2253 0.437109 15.3775 0.507853 15.5146C0.578596 15.6518 0.68112 15.7701 0.806869 15.8596L5.4927 20.5454C5.58209 20.6373 5.68888 20.7106 5.80684 20.761C5.9248 20.8113 6.05158 20.8377 6.17983 20.8386C6.30808 20.8395 6.43522 20.8149 6.55389 20.7662C6.67255 20.7176 6.78035 20.6458 6.87104 20.5551C6.96173 20.4644 7.03348 20.3566 7.08214 20.238C7.1308 20.1193 7.15539 19.9922 7.15449 19.8639C7.15358 19.7357 7.12719 19.6089 7.07686 19.4909C7.02653 19.373 6.95325 19.2662 6.86129 19.1768L3.72315 16.0386L26.4226 16.0386L23.2844 19.1768C23.1925 19.2662 23.1192 19.373 23.0688 19.4909C23.0185 19.6089 22.9921 19.7357 22.9912 19.8639C22.9903 19.9922 23.0149 20.1193 23.0636 20.238C23.1122 20.3566 23.184 20.4644 23.2747 20.5551C23.3654 20.6458 23.4732 20.7176 23.5918 20.7662C23.7105 20.8149 23.8376 20.8395 23.9659 20.8386C24.0941 20.8377 24.2209 20.8113 24.3389 20.761C24.4568 20.7106 24.5636 20.6373 24.653 20.5454L29.3562 15.8422C29.4684 15.7573 29.5607 15.649 29.6267 15.5248C29.6927 15.4006 29.7309 15.2635 29.7385 15.123C29.7461 14.9826 29.7231 14.8421 29.6709 14.7115C29.6187 14.5809 29.5387 14.4632 29.4364 14.3667Z" fill="black"/></svg>');
+            margin-top: 1px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.mil-c-swipe {
+    cursor: grab;
+}
+
+/* -------------------------------------------
+
+scrollbar
+
+------------------------------------------- */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.mil-progress-track {
+    position: fixed;
+    z-index: 999999999999;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #000;
+
+    & .mil-progress {
+        background-color: variables.$a;
+        height: 0;
+        width: 5px;
+        border-radius: 4px;
+        transition: variables.$tmd;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+/* -------------------------------------------
+
+breadcrumbs
+
+------------------------------------------- */
+.mil-breadcrumbs {
+    display: flex;
+
+    & li {
+        font-size: 12px;
+        list-style-type: none;
+
+        &:after {
+            content: '>>';
+            margin: 0 15px;
+        }
+
+        & a {
+            color: variables.$l1;
+            transition: variables.$tmd;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+
+            &:hover {
+                color: variables.$a;
+            }
+        }
+
+        &:last-child {
+            cursor: not-allowed;
+
+            &:after {
+                display: none;
+            }
+
+            & a {
+                color: variables.$l2;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------
+
+buttons
+
+------------------------------------------- */
+
+.mil-btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    padding: 0 40px;
+    height: 60px;
+    background-color: variables.$a;
+    color: variables.$d1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: variables.$tmd;
+
+    &.mil-btn-lg {
+        height: 90px;
+        padding: 0 70px;
+        font-size: 16px;
+    }
+
+    &.mil-btn-border {
+        border: solid 2px variables.$l1;
+        background-color: transparent;
+        color: variables.$l1;
+
+    }
+
+    &.mil-btn-soft {
+        background-color: variables.$as;
+        color: variables.$d1;
+    }
+
+    &.mil-btn-link {
+        background-color: transparent;
+        padding: 0;
+        color: variables.$l1;
+
+        &.mil-accent {
+            color: variables.$a;
+        }
+    }
+
+    & i {
+        margin-left: 10px;
+        transition: variables.$tmd;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(110%);
+
+        & i {
+            margin-left: 15px;
+        }
+    }
+}
+
+.mil-buttons-frame {
+    display: flex;
+    align-items: center;
+
+    & .mil-btn {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        & .mil-btn {
+            margin-right: 0;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------
+
+link
+
+------------------------------------------- */
+.mil-text-link {
+    position: relative;
+    color: variables.$a;
+    text-decoration: none;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 0;
+        background-color: variables.$a;
+        transition: variables.$tsm;
+    }
+
+    &.mil-light {
+        color: variables.$l1;
+
+        &:after {
+            background-color: variables.$l1;
+        }
+    }
+
+    &.mil-soft {
+        color: variables.$l2;
+
+        &:after {
+            background-color: variables.$a;
+        }
+
+        &:hover {
+            color: variables.$a;
+        }
+    }
+
+    &.mil-dark {
+        color: variables.$d1;
+
+        &:after {
+            background-color: variables.$d1;
+        }
+    }
+
+    &.mil-accent-soft {
+        color: variables.$as;
+
+        &:after {
+            background-color: variables.$as;
+        }
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+h1,
+h2,
+h3 {
+    .mil-text-link {
+        &:after {
+            height: 4px;
+        }
+    }
+}
+
+h4,
+h5,
+h6 {
+    .mil-text-link {
+        &:after {
+            height: 2px;
+        }
+    }
+}
+
+/* -------------------------------------------
+
+spaces
+
+------------------------------------------- */
+.mil-mb120 {
+    margin-bottom: 120px;
+}
+
+.mil-mb90 {
+    margin-bottom: 90px;
+}
+
+.mil-mb60 {
+    margin-bottom: 60px;
+}
+
+.mil-mb30 {
+    margin-bottom: 30px;
+}
+
+.mil-mb20 {
+    margin-bottom: 20px;
+}
+
+.mil-mb15 {
+    margin-bottom: 15px;
+}
+
+.mil-mb10 {
+    margin-bottom: 10px;
+}
+
+.mil-p-240-0 {
+    padding-top: 240px;
+}
+
+.mil-p-240-120 {
+    padding-top: 240px;
+    padding-bottom: 120px;
+}
+
+.mil-p-180-180 {
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.mil-p-180-120 {
+    padding-top: 180px;
+    padding-bottom: 120px;
+}
+
+.mil-p-120-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.mil-p-120-90 {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.mil-p-120-30 {
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.mil-p-30-120 {
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+
+.mil-p-30-90 {
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+.mil-p-0-30 {
+    margin-bottom: 30px;
+}
+
+.mil-p-30-0 {
+    padding-top: 30px;
+}
+
+.mil-p-30-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mil-p-120-0 {
+    padding-top: 120px;
+}
+
+.mil-p-0-120 {
+    margin-bottom: 120px;
+}
+
+.mil-p-0-90 {
+    padding-bottom: 90px;
+}
+
+.mil-p-120-60 {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.mil-p-0-60 {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+    .mil-768-p-90-120 {
+        padding-top: 90px;
+        padding-bottom: 120px;
+    }
+
+    .mil-768-p-0-120 {
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+
+    .mil-768-mb30 {
+        margin-bottom: 30px;
+    }
+
+    .mil-768-mb90 {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mil-992-p-150-120 {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+
+    .mil-992-p-150-0 {
+        padding-top: 150px;
+    }
+
+    .mil-992-p-0-0 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .mil-992-p-150-0 {
+        padding-top: 150px;
+    }
+
+    .mil-992-mb30 {
+        margin-bottom: 30px;
+    }
+}
+
+/* -------------------------------------------
+
+post typography
+
+------------------------------------------- */
+
+.mil-post-details {
+    .mil-item {
+        margin: 0 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: variables.$l1;
+            transition: variables.$tsm;
+
+            &:hover {
+                color: variables.$a;
+            }
+        }
+    }
+}
+
+.mil-text {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    ul, ol {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding-left: 0;
+        list-style: disc;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        li {
+            list-style-position: inside;
+        }
+    }
+    a {
+        color: variables.$l1;
+        transition: variables.$tsm;
+
+        &:hover {
+            color: variables.$a;
+        }
+    }
+    blockquote {
+        font-size: 30px;
+        margin-bottom: 60px;
+        color: variables.$l1;
+        line-height: 1.6;
+
+        &:before {
+            line-height: 1;
+            padding-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.mil-tags {
+    p, ul {
+        display: inline-block;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        li {
+            display: inline-block;
+            margin-right: 15px;
+
+            &:first-child {
+                margin-left: 15px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    a {
+        border: 1px solid variables.$a;
+        color: variables.$l1;
+        transition: variables.$tsm;
+        padding: 0.25em 0.5em;
+
+        &:hover {
+            color: variables.$a;
+        }
+    }
+}

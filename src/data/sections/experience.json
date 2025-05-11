@@ -1,0 +1,65 @@
+{
+    "label": {
+      "title": "A little about me"
+    },
+
+    "description": "I have over 5 years of experience in UI/UX and visual design, and now transitioning into core frontend development to bridge the gap between great design and functional code — creating products that not only look good but work beautifully.",
+    
+    "majorSkills": [
+      {
+        "num": 95,
+        "numAfter": "%",
+        "label": "Figma",
+        "projectName": "Design Tool",
+        "text": "Advanced prototyping and visual UI/UX workflows.",
+        "link": "#"
+      },
+      {
+        "num": 90,
+        "numAfter": "%",
+        "label": "HTML/CSS",
+        "projectName": "Frontend Markup",
+        "text": "Clean, accessible, and responsive layouts.",
+        "link": "#"
+      },
+      {
+        "num": 85,
+        "numAfter": "%",
+        "label": "JavaScript",
+        "projectName": "Frontend Logic",
+        "text": "Dynamic behavior and interaction for web apps.",
+        "link": "#"
+      },
+      {
+        "num": 80,
+        "numAfter": "%",
+        "label": "React",
+        "projectName": "Frontend Framework",
+        "text": "Building scalable and modular UIs with components.",
+        "link": "#"
+      },
+      {
+        "num": 75,
+        "numAfter": "%",
+        "label": "WordPress",
+        "projectName": "CMS",
+        "text": "Custom themes, plugin integrations, and full site editing.",
+        "link": "#"
+      },
+      {
+        "num": 70,
+        "numAfter": "%",
+        "label": "Webflow",
+        "projectName": "No-Code Tool",
+        "text": "Design and develop responsive websites without code.",
+        "link": "#"
+      }
+    ],
+    "otherSkills": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe InDesign",
+      "CorelDraw"
+    ]
+  }
+  

@@ -1,0 +1,76 @@
+{
+    "items": [
+        {
+            "image": "/img/store/1.png",
+            "title": "Rest hammock",
+            "price": "276.99",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/2.png",
+            "title": "Yellow collection bookcase",
+            "price": "272.99",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/3.png",
+            "title": "Tricolore chair",
+            "price": "267.00",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/4.png",
+            "title": "Product prototype",
+            "price": "122.99",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/5.png",
+            "title": "Yellow minimalist chair",
+            "price": "102.99",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/6.png",
+            "title": "Multicolored rest chair",
+            "price": "132.50",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/7.png",
+            "title": "Wooden craft folder",
+            "price": "152.50",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/8.png",
+            "title": "Decorative book tome",
+            "price": "52.50",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/9.png",
+            "title": "Padded orange chair",
+            "price": "72.50",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/10.png",
+            "title": "Adventure backpack",
+            "price": "127.50",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/11.png",
+            "title": "Yellow minimalist armchair",
+            "price": "222.50",
+            "currency": "$"
+        },
+        {
+            "image": "/img/store/12.png",
+            "title": "Prototype rest chair",
+            "price": "252.50",
+            "currency": "$"
+        }
+    ]
+}

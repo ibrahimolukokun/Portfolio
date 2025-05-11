@@ -1,0 +1,23 @@
+{
+    "photo": {
+        "url": "/img/about/4.png",
+        "alt": "user"
+    },
+    "items": [
+        {
+            "name": "Lucas Wolfer",
+            "role": "SEO ocean",
+            "text": "They have the best customer service. The project is also incredibly flexible and easy to use and explore. Glad to have met this team!"
+        },
+        {
+            "name": "Lucas Wolfer",
+            "role": "SEO ocean",
+            "text": "They have the best customer service. The project is also incredibly flexible and easy to use and explore. Glad to have met this team!"
+        },
+        {
+            "name": "Lucas Wolfer",
+            "role": "SEO ocean",
+            "text": "They have the best customer service. The project is also incredibly flexible and easy to use and explore. The user interface is intuitive and user-friendly. I am glad to have met this amazing team!"
+        }
+    ]
+}

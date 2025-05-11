@@ -1,0 +1,13 @@
+{
+    "title": "All our experience started 7 years ago",
+    "subtitle": "About us",
+    "description": "My first business card designed 7 years ago gave us the motivation and drive to be today offering a different and personalized service.",
+    "button": {
+        "label": "Continue",
+        "link": "/about"
+    },
+    "image": {
+        "url": "/img/about/1.jpg",
+        "alt": "banner"
+    }
+}

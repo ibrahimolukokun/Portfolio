@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "icon": "/img/icons/4.png",
+            "title": "Branding",
+            "text": "We make your project have a unique and incomparable."
+        },
+        {
+            "icon": "/img/icons/5.png",
+            "title": "Web Design",
+            "text": "If you need a new experience we can create something sublime"
+        },
+        {
+            "icon": "/img/icons/6.png",
+            "title": "Strategic Vision",
+            "text": "A very well planned vision will take you to your destination"
+        }
+    ]
+}

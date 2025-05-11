@@ -1,0 +1,5 @@
+# Ignore build output and dependencies
+.next/
+node_modules/
+.DS_Store
+.env

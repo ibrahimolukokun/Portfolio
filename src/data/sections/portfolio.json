@@ -1,0 +1,9 @@
+{
+    "subtitle": "Recent works",
+    "title": "Portfolio",
+    "description": "Take a look at our latest design projects done for our newest clients, we have worked countless hours for total satisfaction.",
+    "button": {
+        "label": "Continue",
+        "link": "/projects-3"
+    }
+}

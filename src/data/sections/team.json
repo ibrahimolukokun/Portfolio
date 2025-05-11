@@ -1,0 +1,20 @@
+{
+    "title": "Meet the Collaborators",
+    "items": [
+        {
+            "image": "/img/about/team/1.jpg",
+            "name": "Jordan Jhonson",
+            "role": "Ceo of Googel"
+        },
+        {
+            "image": "/img/about/team/2.jpg",
+            "name": "Jordan Jhonson",
+            "role": "Ceo of Googel"
+        },
+        {
+            "image": "/img/about/team/3.jpg",
+            "name": "Jordan Jhonson",
+            "role": "Ceo of Googel"
+        }
+    ]
+}

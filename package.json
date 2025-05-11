@@ -1,0 +1,31 @@
+{
+  "name": "okai-nextjs",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "eslint-config-next": "^15.0.0-rc.1",
+    "formik": "^2.4.6",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.12.5",
+    "isotope-layout": "^3.0.6",
+    "next": "^15.0.1",
+    "next-share": "^0.27.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-masonry": "^1.0.7",
+    "react-modal-video": "^2.0.2",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "sass": "^1.80.1",
+    "swiper": "^9.0.0"
+  }
+}

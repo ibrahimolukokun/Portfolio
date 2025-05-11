@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "icon": "/img/icons/1.png",
+            "title": "Corporate identity",
+            "text": "Each piece is designed with a purpose to reinforce the message of the brand in all channels for."
+        },
+        {
+            "icon": "/img/icons/2.png",
+            "title": "Corporate identity",
+            "text": "We examine every little detail so that the project is perfectly well structured to achieve the."
+        },
+        {
+            "icon": "/img/icons/3.png",
+            "title": "Corporate identity",
+            "text": "We present our work counting the purposes and the value that it will bring to the brand in every."
+        }
+    ]
+}

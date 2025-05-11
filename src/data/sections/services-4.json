@@ -1,0 +1,21 @@
+{
+    "title": "Our services",
+    "items": [
+        {
+            "title": "Corporate identity",
+            "text": "Each piece is designed with a purpose to reinforce the message of the brand in all channels for the customer."
+        },
+        {
+            "title": "Community manager",
+            "text": "Each piece is designed with a purpose to reinforce the message of the brand in all channels for the customer."
+        },
+        {
+            "title": "Graphic design",
+            "text": "Each piece is designed with a purpose to reinforce the message of the brand in all channels for the customer."
+        }
+    ],
+    "image": { 
+        "url": "/img/about/8.jpg",
+        "alt": "image"
+    }
+}

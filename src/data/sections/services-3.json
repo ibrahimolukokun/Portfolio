@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "image": "/img/portfolio/5.jpg",
+            "title": "Web design",
+            "num": "01.",
+            "icon": "/img/icons/7.png",
+            "text": "Each piece is designed with a purpose to reinforce the message of the brand in all channels for the customer.",
+            "link": "/services/service-1"
+        },
+        {
+            "image": "/img/portfolio/8.jpg",
+            "title": "Branding",
+            "num": "02.",
+            "icon": "/img/icons/8.png",
+            "text": "Each piece is designed with a purpose to reinforce the message of the brand in all channels for the customer.",
+            "link": "/services/service-2"
+        },
+        {
+            "image": "/img/portfolio/7.jpg",
+            "title": "Marketing",
+            "num": "03.",
+            "icon": "/img/icons/9.png",
+            "text": "Each piece is designed with a purpose to reinforce the message of the brand in all channels for the customer.",
+            "link": "/services/service-3"
+        }
+    ]
+}
