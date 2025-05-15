@@ -1,6 +1,6 @@
 ---
 #preview
-title: Tony's Chocolonely
+title: Movie Info Landing Page
 image: /img/portfolio/6.jpg
 category: Logos
 category_slug: logos

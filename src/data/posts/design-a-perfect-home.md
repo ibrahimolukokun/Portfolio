@@ -1,7 +1,7 @@
 ---
 #preview
-title: 'Design a perfect home'
-date: '2022-04-02'
+title: 'Arrays vs Objects in JavaScript: Understanding the Core Differences'
+date: '2025-04-02'
 image: "/img/blog/1.jpg"
 categories:
     - Urban

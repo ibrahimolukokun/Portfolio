@@ -451,33 +451,39 @@ portfolio
 
 
 .mil-project-btn-frame {
+    padding-top: 40px;
     padding-bottom: 59%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 1rem; // space between buttons
     position: relative;
-
+  
     & .mil-btn {
-        position: absolute;
-        top: calc(50% - 30px);
-        left: auto;
-        right: auto;
-        bottom: auto;
+      position: static; // remove absolute positioning
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; // spacing between icon and label
     }
-
+  
     @media (max-width: 992px) {
-        padding-bottom: 79%;
+      padding-bottom: 79%;
     }
-
+  
     @media (max-width: 768px) {
-        padding-bottom: 0;
-        padding-top: 60px;
-
-        & .mil-btn {
-            position: static;
-        }
+      padding-bottom: 0;
+      padding-top: 60px;
+      flex-wrap: wrap; // allow buttons to wrap if needed
+      gap: 0.75rem;
+  
+      & .mil-btn {
+        width: 100%;
+        justify-content: center;
+      }
     }
-}
+  }
+  
 
 .mil-half-project-card {
     display: block;
@@ -535,6 +541,154 @@ portfolio
         transform: rotate(360deg);
     }
 }
+
+/* -------------------------------------------
+
+My Experience
+
+------------------------------------------- */
+
+.mil-experience-section {
+
+    margin-bottom: 90px;
+
+    .mil-section-title {
+      font-size: 52px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: variables.$a;
+    }
+  
+    .mil-experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  
+    .mil-experience-item {
+        display: grid;
+        grid-template-columns: 24px 60px 1fr 100px 180px 200px;
+        align-items: center;
+        padding: 16px 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: background-color 0.3s, border-color 0.3s;
+        color: #fff;
+      
+        .mil-arrow-icon {
+          opacity: 0;
+          transition: opacity 0.3s;
+          color: variables.$a;
+        }
+      
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.05);
+          border-color: rgba(255, 255, 255, 0.1);
+      
+          .mil-arrow-icon {
+            opacity: 1;
+          }
+        }
+      
+        span {
+          font-size: 14px;
+        }
+      
+        .mil-experience-role {
+          font-weight: 600;
+        }
+      
+        .mil-role-year-wrapper,
+        .mil-company-website-wrapper {
+          display: contents; // no interference on large screens
+        }
+      
+        .mil-experience-role {
+          grid-column: 3 / 4;
+        }
+      
+        .mil-experience-year {
+          grid-column: 4 / 5;
+        }
+      
+        .mil-experience-company {
+          grid-column: 5 / 6;
+        }
+      
+        .mil-experience-website {
+          grid-column: 6 / 7;
+        }
+      }
+      
+      @media (max-width: 1024px) {
+        .mil-experience-item {
+          grid-template-columns: 24px 40px 1fr;
+          grid-template-rows: repeat(3, auto);
+          row-gap: 6px;
+      
+          .mil-experience-id {
+            grid-column: 1 / 2;
+            grid-row: 1;
+          }
+      
+          .mil-arrow-icon {
+            grid-column: 2 / 3;
+            grid-row: 1;
+          }
+      
+          // 🆕 Role and Year on top row
+          .mil-role-year-wrapper {
+            grid-column: 3 / -1;
+            grid-row: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 4px;
+      
+            .mil-experience-role,
+            .mil-experience-year {
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+      
+          // ✅ Company and Website on bottom row
+          .mil-company-website-wrapper {
+            grid-column: 3 / -1;
+            grid-row: 2;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 4px;
+      
+            .mil-experience-company,
+            .mil-experience-website {
+              font-size: 13px;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+      
+      @media (max-width: 600px) {
+        .mil-experience-item {
+          padding: 12px 8px;
+          grid-template-columns: 20px 32px 1fr;
+          row-gap: 4px;
+      
+          span {
+            font-size: 13px;
+          }
+      
+          .mil-experience-role {
+            font-size: 14px;
+          }
+        }
+      }
+      
+  }
+  
+  
+  
 
 /* -------------------------------------------
 
@@ -1131,7 +1285,7 @@ call to action
 
 .mil-cta {
     padding: 90px 90px 60px;
-    background-color: variables.$a;
+    background-color: variables.$d2;
 
     @media (max-width: 992px) {
         padding: 60px 60px 30px;

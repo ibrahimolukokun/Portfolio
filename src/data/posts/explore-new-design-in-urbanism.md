@@ -1,7 +1,7 @@
 ---
 #preview
-title: 'Explore new design in urbanism'
-date: '2022-04-02'
+title: 'JavaScript Function Parameters and Arguments: Explained Simply'
+date: '2025-04-01'
 image: "/img/blog/3.jpg"
 categories:
     - Urban

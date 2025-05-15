@@ -7,8 +7,10 @@ import Data from "@data/sections/portfolio.json";
 import Link from "next/link";
 import Image from 'next/image';
 import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
+import { FaBehance, FaGithub } from 'react-icons/fa';
 
-const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description": ""}, paddingTop = 120, paddingBottom = 90, projects, order, btnBorder = true } ) => {
+
+const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description": ""}, paddingTop = 120, paddingBottom = 60, projects, order, btnBorder = true } ) => {
 
     let projectsKeys = {};
 
@@ -89,12 +91,8 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
                             </Link>
                             }
 
-                            
-                        </div>
-
-                        <div className="col-md-6">
                             {projectsKeys[order[2]] !== undefined &&
-                            <Link href="https://www.behance.net/gallery/148527331/Zafunda-Learning-Platform-UI-Design-Web-Design"
+                            <Link href="https://www.behance.net/gallery/143540529/Food-Delivery-App-Mobile-UI-Design"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mil-project-card mil-mb30 mil-up mil-c-view">
@@ -118,8 +116,12 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
                                 </div>
                             </Link>
                             }
+                            
+                        </div>
+
+                        <div className="col-md-6">
                             {projectsKeys[order[3]] !== undefined &&
-                            <Link href="https://recipe-savvy.vercel.app/"
+                            <Link href="https://www.behance.net/gallery/148527331/Zafunda-Learning-Platform-UI-Design-Web-Design"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mil-project-card mil-mb30 mil-up mil-c-view">
@@ -129,7 +131,7 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
                                     </div>
                                     <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
                                     
-                                    <p className="mil-tag-text">Web Application</p>
+                                    <p className="mil-tag-text">UI/UX CASE STUDY</p>
 
                                         <div className="mil-bottom-overlay">
 
@@ -143,9 +145,69 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
                                 </div>
                             </Link>
                             }
-                            <div className="mil-project-btn-frame mil-up">
-                                <Link href={Data.button.link} className={btnBorder ? "mil-btn mil-btn-border mil-c-gone" : "mil-btn mil-c-gone"}>{Data.button.label}</Link>
+
+                            {projectsKeys[order[4]] !== undefined &&
+                            <Link href="https://recipe-savvy.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mil-project-card mil-mb30 mil-up mil-c-view">
+                                <div className="mil-cover-frame mil-v">
+                                    <div className="mil-hover-frame">
+                                        <Image src={projectsKeys[order[4]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[4]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
+                                    </div>
+                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
+                                    
+                                    <p className="mil-tag-text">Web Application</p>
+
+                                        <div className="mil-bottom-overlay">
+
+                                        <h3 className="mil-title-text">{projectsKeys[order[4]].title}</h3>
+
+                                        <button className="mil-view-button">
+                                        <FaExternalLinkSquareAlt size={22} />
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                            }
+
+                            {projectsKeys[order[5]] !== undefined &&
+                            <Link href="https://neo-stream.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mil-project-card mil-mb30 mil-up mil-c-view">
+                                <div className="mil-cover-frame mil-v">
+                                    <div className="mil-hover-frame">
+                                        <Image src={projectsKeys[order[5]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[5]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
+                                    </div>
+                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
+                                    
+                                    <p className="mil-tag-text">Landing Page</p>
+
+                                        <div className="mil-bottom-overlay">
+
+                                        <h3 className="mil-title-text">{projectsKeys[order[5]].title}</h3>
+
+                                        <button className="mil-view-button">
+                                        <FaExternalLinkSquareAlt size={22} />
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                            }
+
+                            <div className="mil-project-btn-frame mil-up flex gap-4">
+                            <Link href="https://behance.net/ibrahimolukokun" target="_blank" className="mil-btn mil-c-gone flex items-center gap-2" >
+                            <FaBehance /> Behance
+                            </Link>
+
+                            <Link href="https://github.com/ibrahimolukokun" target="_blank" className="mil-btn mil-c-gone flex items-center gap-2" >
+                            <FaGithub /> GitHub
+                            </Link>
                             </div>
+
                         </div>
                         
                     </div>

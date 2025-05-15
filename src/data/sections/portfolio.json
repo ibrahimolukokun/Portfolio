@@ -1,9 +1,18 @@
 {
-    "subtitle": "Recent works",
+    "subtitle": "Selected Work",
     "title": "Portfolio",
-    "description": "Take a look at our latest design projects done for our newest clients, we have worked countless hours for total satisfaction.",
-    "button": {
-        "label": "Continue",
-        "link": "/projects-3"
-    }
-}
+    "description": "Explore a curated selection of my recent frontend and UI/UX projects—ranging from dynamic web applications to in-depth product design case studies.", 
+    "buttons": [
+      {
+        "label": "Behance",
+        "link": "https://behance.net/ibrahimolukokun",
+        "icon": "behance"
+      },
+      {
+        "label": "GitHub",
+        "link": "https://github.com/ibrahimolukokun",
+        "icon": "github"
+      }
+    ]
+  }
+  

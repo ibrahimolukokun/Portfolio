@@ -10,12 +10,11 @@ import OkaiLayout from "@layouts/OkaiLayout";
 
 import HeroSection from "@components/sections/Hero";
 import ExperienceSection from "@components/sections/Experience";
-import CallToActionSection from "@components/sections/CallToAction";
+import MyExperience from "@components/sections/MyExperience";
 import LatestPostsSection from "@components/sections/LatestPosts";
 import CallToActionTwoSection from "@components/sections/CallToActionTwo";
 
 const PortfolioSection = dynamic( () => import("@components/sections/Portfolio"), { ssr: true } );
-const TestimonialSlider = dynamic( () => import("@components/sliders/Testimonial"), { ssr: true } );
 
 export const metadata = {
   title: {
@@ -44,34 +43,13 @@ async function Home1() {
       <Suspense fallback={<div>Loading...</div>}>
         <PortfolioSection
           projects={projects}
-          order={["project-1", "project-3", "project-2", "project-4"]}
+          order={["project-1", "project-3", "project-5", "project-2", "project-4", "project-6"]}
         />
       </Suspense>
-</div>
-
-      <CallToActionSection />
-      <TestimonialSlider
-        items={[
-          {
-            "name": "Lucas Wolfer",
-            "role": "SEO ocean",
-            "image": "/img/faces/3.jpg",
-            "text": "They have the best customer service. The project is also incredibly flexible and easy to use and explore. Glad to have met this team!"
-          },
-          {
-            "name": "Lucas Wolfer",
-            "role": "SEO ocean",
-            "image": "/img/faces/2.jpg",
-            "text": "They have the best customer service. The project is also incredibly flexible and easy to use and explore. Glad to have met this team!"
-          },
-          {
-            "name": "Lucas Wolfer",
-            "role": "SEO ocean",
-            "image": "/img/faces/1.jpg",
-            "text": "They have the best customer service. The project is also incredibly flexible and easy to use and explore. The user interface is intuitive and user-friendly. I am glad to have met this amazing team!"
-          }
-        ]}
-      />
+      </div>
+      
+      <MyExperience />
+      
       <Suspense fallback={<div>Loading...</div>}>
         <LatestPostsSection posts={posts} />
       </Suspense>
