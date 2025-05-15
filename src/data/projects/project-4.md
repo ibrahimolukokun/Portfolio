@@ -1,6 +1,6 @@
 ---
 #preview
-title: Cascade of Lava
+title: Food Recipe Finder
 image: /img/portfolio/4.jpg
 category: UI Elements
 category_slug: ui-elements

@@ -1,6 +1,6 @@
 ---
 #preview
-title: Kemia Industrial Factory
+title: Online Banking App
 image: /img/portfolio/3.jpg
 category: Web Templates
 category_slug: web-templates

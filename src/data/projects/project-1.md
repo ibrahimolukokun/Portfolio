@@ -1,6 +1,6 @@
 ---
 #preview
-title: Interior design studio
+title: Project Management Dashboard
 image: /img/portfolio/1.jpg
 category: Web Templates
 category_slug: web-templates

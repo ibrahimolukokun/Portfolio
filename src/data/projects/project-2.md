@@ -1,7 +1,7 @@
 ---
 #preview
-title: City House
-image: /img/portfolio/2.jpg
+title: E-learning Platform
+image: /img/portfolio/Zafunda_Cover.png
 category: Web Templates
 category_slug: web-templates
 #portfolio image size for masonry layout: horizontal, vertical, square

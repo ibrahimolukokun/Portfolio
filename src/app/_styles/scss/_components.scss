@@ -331,7 +331,7 @@ portfolio
         position: relative;
 
         &.mil-v {
-            padding-bottom: 120%;
+            padding-bottom: 80%;
 
             &.mil-longer {
                 padding-bottom: 150%;
@@ -355,16 +355,16 @@ portfolio
         }
 
         & .mil-hover-frame {
-            position: absolute;
             top: 0;
             left: 0;
+            position: absolute;
             width: 100%;
             height: 100%;
             transition: variables.$tmd;
 
             & img {
                 object-fit: cover;
-                object-position: center;
+                object-position: left;
                 width: 100%;
                 height: 100%;
             }
@@ -377,6 +377,49 @@ portfolio
             width: 100%;
             height: 100%;
             transition: variables.$tmd;
+            
+            & .mil-tag-text {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                background-color: variables.$a;
+                color: variables.$d1;
+                padding: 6px 12px;
+                border-radius: 18px;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                z-index: 10;
+              }
+
+              & .mil-bottom-overlay {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+              }
+
+              &.mil-title-text {
+                font-size: 18px;
+                font-weight: 600;
+                color: variables.$a;
+            }
+
+            & .mil-view-button{
+                background-color: variables.$d1;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: variables.$a;
+                border-radius: 50%;
+                border: solid 2px variables.$a;
+                cursor: pointer;
+                transition: top 0.2s ease, left 0.2s ease;
+            }
 
             & .mil-addition-btn {
                 background-color: red;
@@ -388,10 +431,6 @@ portfolio
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: 2px;
                 color: variables.$d1;
             }
         }
