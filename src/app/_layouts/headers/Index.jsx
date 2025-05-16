@@ -37,13 +37,14 @@ const HeaderModule = ( { layout } ) => {
                         <div className="col-6">
                             <Link href="/" className="mil-logo mil-c-gone">{AppData.header.logoText}</Link>
                         </div>
-                        <div className="col-6 mil-jce mil-aic">
+                        <div className="col-6 mil-jce mil-aic ">
+                            <a href="mailto:iolukokun.com">
                             <div className="mil-phone mil-group-text mil-fs14"><span className="mil-soft">{AppData.header.contact.label}</span><span className="mil-light">{AppData.header.contact.value}</span></div>
-                            <div className="mil-buttons-frame">
-                                <div className={`mil-menu-btn mil-c-gone ${toggle ? "mil-active" : ""}`} onClick={() => menuOpen() }>
-                                    <span></span>
-                                </div>
-                            </div>
+                            </a>
+                            
+                            <Link href="https://docs.google.com/document/d/1x75TNsqczZ0haS-xhl5CzOf4mH7FkovbDFyjOqr0slQ/edit?usp=sharing" target="_blank" className="mil-btn mil-btn-border mil-c-gone flex items-center gap-2" > RESUME
+                            </Link>
+
                         </div>
                     </div>
                 </div>
