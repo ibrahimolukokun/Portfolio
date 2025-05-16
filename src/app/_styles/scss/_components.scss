@@ -564,6 +564,18 @@ My Experience
       flex-direction: column;
       gap: 32px;
     }
+    
+    .mil-experience-content {
+        display: contents; // default for large screens, won't break grid layout
+      
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          gap: 12px; // or whatever spacing you want
+          grid-column: 3 / -1; // to maintain layout if you're using grid
+        }
+      }
+      
   
     .mil-experience-item {
         display: grid;
@@ -693,7 +705,7 @@ My Experience
         @media (max-width: 480px) {
 
             .mil-experience-section {
-                padding: 8px 8px 8px;
+                padding: 0px;
             }
             .mil-experience-item {
             grid-template-columns: 20px 24px 1fr;
@@ -711,7 +723,23 @@ My Experience
       
   }
   
-  
+  section.mil-experience-section.container {
+    padding: 60px; /* Default padding */
+}
+
+.mil-container.mil-cta.mil-up {
+    padding: 30px 30px 30px; /* Default padding */
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
+    section.mil-experience-section.container {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .mil-container.mil-cta.mil-up {
+        padding: 15px 15px 15px; /* Reduced padding for child on mobile */
+    }
+}
   
 
 /* -------------------------------------------

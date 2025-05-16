@@ -20,7 +20,7 @@ const MyExperience = () => {
               <MdArrowOutward />
               </span>
               <span className="mil-experience-id">{exp.id}.</span>
-              
+              <div className="mil-experience-content">
                  <div className="mil-role-year-wrapper">
                     <span className="mil-experience-role">{exp.role}</span>
                     <span className="mil-experience-year">{exp.year}</span>
@@ -28,6 +28,7 @@ const MyExperience = () => {
                 <div className="mil-company-website-wrapper">
                     <span className="mil-experience-company">{exp.company}</span>
                     <span className="mil-experience-website">{exp.website}</span>
+                </div>
                 </div>
               
             
