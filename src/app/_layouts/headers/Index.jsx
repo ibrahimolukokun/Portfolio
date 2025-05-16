@@ -42,7 +42,7 @@ const HeaderModule = ( { layout } ) => {
                             <div className="mil-phone mil-group-text mil-fs14"><span className="mil-soft">{AppData.header.contact.label}</span><span className="mil-light">{AppData.header.contact.value}</span></div>
                             </a>
                             
-                            <Link href="https://docs.google.com/document/d/1x75TNsqczZ0haS-xhl5CzOf4mH7FkovbDFyjOqr0slQ/edit?usp=sharing" target="_blank" className="mil-btn mil-btn-border mil-c-gone flex items-center gap-2" > RESUME
+                            <Link href="https://drive.google.com/file/d/1yKEvDMtDg-iTc140sQg-UVo1TlE62YLE/view?usp=sharing" target="_blank" className="mil-btn mil-btn-border mil-c-gone flex items-center gap-2" > RESUME
                             </Link>
 
                         </div>
