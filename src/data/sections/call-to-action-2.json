@@ -1,12 +1,7 @@
 {
-    "line1": {
-        "text": "Contact us",
-        "label": "now",
-        "link": "/contact"
-    },
-    "line2": {
-        "text": "Just say Hello via",
-        "label": "online chat",
-        "link": "/contact"
-    }
-}
+    "headline": "Let’s Work Together",
+    "subheadline": "Have a project in mind?",
+    "email": "mailto:iolukokun@gmail.com",
+    "emailLabel": "Email Me"
+  }
+  

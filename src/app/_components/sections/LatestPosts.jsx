@@ -16,7 +16,7 @@ const LatestPostsSection = ( { posts, paddingTop = 0, paddingBottom = 90 } ) => 
                         </div>
                         {posts.slice(0, Data.numOfItems).map((item, key) => (
                         <div className="col-lg-6" key={`latest-posts-item-${key}`}>
-                            <Link href={`/blog/${item.id}`} className="mil-blog-card mil-mb30 mil-c-read">
+                            <Link href={item.link} target="_blank" rel="noopener noreferrer" className="mil-blog-card mil-mb30 mil-c-read">
                                 <div className="mil-card-cover mil-up">
                                     <div className="mil-hover-frame">
                                         <Image src={item.image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={item.title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />

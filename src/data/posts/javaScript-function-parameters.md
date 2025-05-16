@@ -3,6 +3,7 @@
 title: 'JavaScript Function Parameters and Arguments: Explained Simply'
 date: '2025-04-01'
 image: "/img/blog/3.jpg"
+link: "https://medium.com/@ibrahimolukokun/javascript-function-parameters-and-arguments-explained-simply-79ed6d8c889b"
 categories:
     - Urban
 tags:

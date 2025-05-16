@@ -550,7 +550,7 @@ My Experience
 
 .mil-experience-section {
 
-    margin-bottom: 90px;
+    padding: 60px 60px 60px;
 
     .mil-section-title {
       font-size: 52px;
@@ -670,6 +670,11 @@ My Experience
       }
       
       @media (max-width: 600px) {
+
+        .mil-experience-section {
+        padding: 40px 40px 40px;
+    }
+
         .mil-experience-item {
           padding: 12px 8px;
           grid-template-columns: 20px 32px 1fr;
@@ -684,6 +689,25 @@ My Experience
           }
         }
       }
+
+        @media (max-width: 480px) {
+
+            .mil-experience-section {
+                padding: 8px 8px 8px;
+            }
+            .mil-experience-item {
+            grid-template-columns: 20px 24px 1fr;
+            row-gap: 4px;
+        
+            span {
+                font-size: 12px;
+            }
+        
+            .mil-experience-role {
+                font-size: 12px;
+            }
+            }
+        }
       
   }
   
@@ -1295,6 +1319,69 @@ call to action
         padding: 30px 30px 0;
     }
 }
+  
+  .mil-text-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  
+  .mil-space {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mil-text-color {
+    color: variables.$l1;
+  }
+  
+  .mil-mb10 {
+    margin-bottom: 10px;
+  }
+  
+  .mil-mb40 {
+    margin-bottom: 40px;
+  }
+  
+  .mil-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    font-weight: 600;
+    border-radius: 32px;
+    text-decoration: none;
+    transition: background 0.3s;
+  
+    &-dark {
+      background: #fff;
+      color: #000;
+  
+      &:hover {
+        color: #fff;
+        background: variables.$d1;
+      }
+    }
+  
+    &-light {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+  
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  
+  
 
 /* -------------------------------------------
 

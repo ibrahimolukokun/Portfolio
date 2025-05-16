@@ -3,6 +3,7 @@
 title: 'Arrays vs Objects in JavaScript: Understanding the Core Differences'
 date: '2025-04-02'
 image: "/img/blog/1.jpg"
+link: "https://medium.com/@ibrahimolukokun/arrays-vs-objects-in-javascript-understanding-the-core-differences-ec227c01c3d3"
 categories:
     - Urban
 tags:

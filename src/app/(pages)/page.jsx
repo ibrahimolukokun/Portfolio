@@ -39,6 +39,9 @@ async function Home1() {
       />
 
       <ExperienceSection />
+
+      <MyExperience />
+      
       <div id="portfolio">
       <Suspense fallback={<div>Loading...</div>}>
         <PortfolioSection
@@ -48,7 +51,7 @@ async function Home1() {
       </Suspense>
       </div>
       
-      <MyExperience />
+      
       
       <Suspense fallback={<div>Loading...</div>}>
         <LatestPostsSection posts={posts} />
