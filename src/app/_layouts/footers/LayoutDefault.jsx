@@ -17,24 +17,17 @@ const DefaultFooter = () => {
         {/* footer */}
         <footer>
             <div className="container mil-p-120-0">
-                <div className="row mil-jcb">
+                <div className="row mil-jcb ">
                     <div className="col-8 col-lg-4 mil-mb90">
                         <Link href="/" className="mil-logo mil-mb60 mil-up mil-c-gone">{AppData.footer.logoText}</Link>
-                        <p className="mil-text mil-fs16 mil-mb60 mil-up" dangerouslySetInnerHTML={{__html : AppData.footer.description}} />
+                        <p className="mil-text mil-fs16 mil-mb60 mil-up mil-footer-mobile-text" dangerouslySetInnerHTML={{__html : AppData.footer.description}} />
                         <ul className="mil-social mil-up">
                             {AppData.social.map((item, key) => (
                             <li key={`footer-social-item-${key}`}><a href={item.link} target="_blank" title={item.title} className="mil-c-gone"><i className={item.icon}></i></a></li>
                             ))}
                         </ul>
                     </div>
-                    <div className="col-lg-2 mil-mb90">
-                        <h5 className="mil-fs16 mil-mb60 mil-up">{AppData.footer.menuTitle}</h5>
-                        <ul className="mil-footer-menu">
-                            {AppData.footer.menu.map((item, key) => (
-                            <li key={`footer-menu-item-${key}`} className="mil-up"><Link href={item.link} className="mil-c-gone">{item.label}</Link></li>
-                            ))}
-                        </ul>
-                    </div>
+                    
                     <div className="col-lg-4 mil-mb90">
                         <h5 className="mil-fs16 mil-mb60 mil-up">{AppData.footer.contactTitle}</h5>
                         <ul className="mil-footer-list">
@@ -49,6 +42,7 @@ const DefaultFooter = () => {
                     </div>
                 </div>
             </div>
+
             <div className="mil-footer-bottom mil-up">
                 <div className="container">
                     <div className="row">
