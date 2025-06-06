@@ -1,9 +1,12 @@
 ---
 #preview
-title: Project Management Dashboard
+title: "Project Management Dashboard"
 image: /img/portfolio/1.jpg
-category: Web Templates
+category: Web Application
 category_slug: web-templates
+link: "https://task-management-system-dashboard.vercel.app/"
+content: "A responsive dashboard app built to manage tasks, projects, and team collaboration efficiently."
+skills: ["React.js", "JavaScript", "TailwindCSS"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: horizontal
 

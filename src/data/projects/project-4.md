@@ -2,8 +2,11 @@
 #preview
 title: Food Recipe Finder
 image: /img/portfolio/4.jpg
-category: UI Elements
+category: Web Application
+link: "https://recipe-savvy.vercel.app/"
 category_slug: ui-elements
+content: "A searchable recipe platform using TheMealDB API, allowing users to find and view food recipes."
+skills: ["HTML", "CSS", "JavaScript"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: square
 

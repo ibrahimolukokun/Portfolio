@@ -2,8 +2,11 @@
 #preview
 title: Online Banking App
 image: /img/portfolio/3.jpg
-category: Web Templates
+category: UI/UX Case Study
+link: "https://www.behance.net/gallery/144319179/Finto-Digital-Banking-Platform"
 category_slug: web-templates
+content: "Redesign of a digital banking experience focused on simplifying account management."
+skills: ["UI Design", "Prototyping", "Figma"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: horizontal
 

@@ -2,8 +2,11 @@
 #preview
 title: Movie Info Landing Page
 image: /img/portfolio/6.jpg
-category: Logos
+category: Landing Page
+link: "https://neo-stream.vercel.app/"
 category_slug: logos
+content: "A modern landing page showcasing featured movies, built to display dynamic content using API calls."
+skills: ["HTML", "CSS", "JavaScript"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: vertical
 

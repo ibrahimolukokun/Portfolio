@@ -25,180 +25,105 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
     return (
         <>
             {/* portfolio */}
+            
             <div className={`mil-portfolio mil-p-${paddingTop}-${paddingBottom}`}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 mil-mb60">
+                        
+                        <div className="col-12 mil-mb30">
                             <span className="mil-suptitle mil-accent mil-mb30 mil-up" dangerouslySetInnerHTML={{__html : heading.subtitle ? heading.subtitle : Data.subtitle}} />
                             <h2 className="mil-fs42 mil-up" dangerouslySetInnerHTML={{__html : heading.title ? heading.title : Data.title}} />
                         </div>
 
-                        <div className="col-md-6">
-                            <div className="row">
-                                <div className="col-9">
-                                    <p className="mil-text mil-fs16 mil-mb90 mil-up" dangerouslySetInnerHTML={{__html : heading.description ? heading.description : Data.description}} />
+                        <div className="">
+                            <div className="">
+                                <div className="container-fluid">
+                                    <p className="mil-text mil-fs16 mil-mb30 mil-up" dangerouslySetInnerHTML={{__html : heading.description ? heading.description : Data.description}} />
                                 </div>
                             </div>
-                            {projectsKeys[order[0]] !== undefined &&
-                            <Link href="https://task-management-system-dashboard.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mil-project-card mil-mb30 mil-up mil-c-view">
-                                <div className="mil-cover-frame mil-v">
-                                    <div className="mil-hover-frame">
-                                        <Image src={projectsKeys[order[0]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[0]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
-                                    </div>
-                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
-                                    
-                                    <p className="mil-tag-text">WEB APPLICATION</p>
 
-                                        <div className="mil-bottom-overlay">
+                            <div className="container-fluid py-4">
+                                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                                    {[0, 1, 2, 3, 4, 5].map((index) => (
+                                    <div className="col" key={index}>
+                                        <a href={projectsKeys[order[index]].link}
+                                                className="view-project-link"
+                                                target="_blank"
+                                                rel="noopener noreferrer">
+                                        <div className="card h-100 shadow border-0"  
+                                            style={{backgroundColor: '#14151A'}}>
+                                        {/* Image Section */}
+                                        <img
+                                            src={projectsKeys[order[index]].image}
+                                            alt={projectsKeys[order[index]].title}
+                                            className="card-img-top img-fluid rounded-top mil-scale-img"
+                                            data-value-1="0.8" data-value-2="1"
+                                            style={{ objectFit: 'cover', height: '250px', display: 'block',
+                                                width: '100%'}}
+                                        />
 
-                                        <h3 className="mil-title-text">{projectsKeys[order[0]].title}</h3>
+                                        {/* Content Section */}
+                                        <div className="card-body d-flex flex-column justify-content-between p-4"
+                                        >
+                                            <div className="gap-3 mb-3">
+                                            <p className="mil-tag-text mb-2 text-muted"
+                                                style={{ fontSize: '0.75rem'}}>
+                                                {projectsKeys[order[index]].category}
+                                            </p>
+                                            <h4 className="mil-title-text fw-bold mb-3">
+                                                {projectsKeys[order[index]].title}
+                                            </h4>
+                                            <p className="text-secondary small mb-3"
+                                                style={{ fontSize: '0.75rem', color: '#B3B3B3',}}>
+                                                {projectsKeys[order[index]].content}
+                                            </p>
+                                            </div>
 
-                                        <button className="mil-view-button">
-                                        <FaExternalLinkSquareAlt size={22} />
-                                        </button>
+                                            <div className="">
+                                            {/* Skills */}
+                                            <div className="d-flex flex-wrap gap-2 mb-3">
+                                                {projectsKeys[order[index]].skills?.map((skill, i) => (
+                                                <span
+                                                    key={i}
+                                                    className=" mil-fs8 badge bg-light text-muted fw-normal me-2 mb-2"
+                                                    style={{
+                                                        backgroundColor: 'rgba(115, 118, 123, 0.1)',
+                                                        color: '#B3B3B3',
+                                                        padding: '0.2rem 1rem',
+                                                        borderRadius: '50px',
+                                                        fontSize: '0.75rem',
+                                                      }}
+                                                >
+                                                    {skill}
+                                                </span>
+                                                ))}
+                                            </div>
+
+                                            {/* View Project */}
+                                            <div
+                                                className="d-inline-flex align-items-center gap-1 text-primary small fw-medium text-decoration-none"
+                                                style={{
+                                                    color: '#fffff',
+                                                    fontSize: '0.875rem',
+                                                    fontWeight: 500,
+                                                  }}
+                                            >
+                                                <FaExternalLinkSquareAlt className="me-1" size={16} />
+                                                View Project
+                                            </div>
+
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </Link>
-                            }
 
-                            {projectsKeys[order[1]] !== undefined &&
-                            <Link href="https://www.behance.net/gallery/144319179/Finto-Digital-Banking-Platform"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mil-project-card mil-mb30 mil-up mil-c-view">
-                                <div className="mil-cover-frame mil-v">
-                                    <div className="mil-hover-frame">
-                                        <Image src={projectsKeys[order[1]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[1]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
-                                    </div>
-                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
-                                    
-                                    <p className="mil-tag-text">UI/UX CASE STUDY</p>
-
-                                        <div className="mil-bottom-overlay">
-
-                                        <h3 className="mil-title-text">{projectsKeys[order[1]].title}</h3>
-
-                                        <button className="mil-view-button">
-                                        <FaExternalLinkSquareAlt size={22} />
-                                        </button>
                                         </div>
+                                        </a>
                                     </div>
+                                    ))}
                                 </div>
-                            </Link>
-                            }
+                            </div>
 
-                            {projectsKeys[order[2]] !== undefined &&
-                            <Link href="https://www.behance.net/gallery/143540529/Food-Delivery-App-Mobile-UI-Design"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mil-project-card mil-mb30 mil-up mil-c-view">
-                                <div className="mil-cover-frame mil-v">
-                                    <div className="mil-hover-frame">
-                                        <Image src={projectsKeys[order[2]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[2]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
-                                    </div>
-                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
-                                    
-                                    <p className="mil-tag-text">UI/UX CASE STUDY</p>
-
-                                        <div className="mil-bottom-overlay">
-
-                                        <h3 className="mil-title-text">{projectsKeys[order[2]].title}</h3>
-
-                                        <button className="mil-view-button">
-                                        <FaExternalLinkSquareAlt size={22} />
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                            }
-                            
-                        </div>
-
-                        <div className="col-md-6">
-                            {projectsKeys[order[3]] !== undefined &&
-                            <Link href="https://www.behance.net/gallery/148527331/Zafunda-Learning-Platform-UI-Design-Web-Design"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mil-project-card mil-mb30 mil-up mil-c-view">
-                                <div className="mil-cover-frame mil-v">
-                                    <div className="mil-hover-frame">
-                                        <Image src={projectsKeys[order[3]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[3]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
-                                    </div>
-                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
-                                    
-                                    <p className="mil-tag-text">UI/UX CASE STUDY</p>
-
-                                        <div className="mil-bottom-overlay">
-
-                                        <h3 className="mil-title-text">{projectsKeys[order[3]].title}</h3>
-
-                                        <button className="mil-view-button">
-                                        <FaExternalLinkSquareAlt size={22} />
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                            }
-
-                            {projectsKeys[order[4]] !== undefined &&
-                            <Link href="https://recipe-savvy.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mil-project-card mil-mb30 mil-up mil-c-view">
-                                <div className="mil-cover-frame mil-v">
-                                    <div className="mil-hover-frame">
-                                        <Image src={projectsKeys[order[4]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[4]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
-                                    </div>
-                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
-                                    
-                                    <p className="mil-tag-text">Web Application</p>
-
-                                        <div className="mil-bottom-overlay">
-
-                                        <h3 className="mil-title-text">{projectsKeys[order[4]].title}</h3>
-
-                                        <button className="mil-view-button">
-                                        <FaExternalLinkSquareAlt size={22} />
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                            }
-
-                            {projectsKeys[order[5]] !== undefined &&
-                            <Link href="https://neo-stream.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mil-project-card mil-mb30 mil-up mil-c-view">
-                                <div className="mil-cover-frame mil-v">
-                                    <div className="mil-hover-frame">
-                                        <Image src={projectsKeys[order[5]].image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={projectsKeys[order[5]].title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
-                                    </div>
-                                    <div className="mil-hover-overlay d-flex flex-col justify-content-center align-items-center" >
-                                    
-                                    <p className="mil-tag-text">Landing Page</p>
-
-                                        <div className="mil-bottom-overlay">
-
-                                        <h3 className="mil-title-text">{projectsKeys[order[5]].title}</h3>
-
-                                        <button className="mil-view-button">
-                                        <FaExternalLinkSquareAlt size={22} />
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                            }
-
-                            <div className="mil-project-btn-frame mil-up flex gap-4">
+                            <div className="mil-project-btn-frame mil-up flex gap-4"
+                            style={{paddingBottom: "120px"}}>
                             <Link href="https://behance.net/ibrahimolukokun" target="_blank" className="mil-btn mil-c-gone flex items-center gap-2" >
                             <FaBehance /> Behance
                             </Link>
@@ -209,10 +134,10 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
                             </div>
 
                         </div>
-                        
                     </div>
                 </div>
             </div>
+
             {/* portfolio end */}
         </>
     );

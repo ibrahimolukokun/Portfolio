@@ -2,8 +2,11 @@
 #preview
 title: E-learning Platform
 image: /img/portfolio/Zafunda_Cover.png
-category: Web Templates
+category: UI/UX Case Study
 category_slug: web-templates
+link: "https://www.behance.net/gallery/148527331/Zafunda-Learning-Platform-UI-Design-Web-Design"
+content: "A user-centered product design for an online learning platform targeting self-paced learners."
+skills: ["UX Research", "Wireframing", "Figma"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: vertical
 

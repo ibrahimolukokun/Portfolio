@@ -1,6 +1,6 @@
 {
     "settings": {
-        "siteName": "Frontend Developer | Web Designer",
+        "siteName": "Frontend Developer | Design Engineer | Web Designer",
         "siteDescription": "Bridging Code & Design to Build Functional, User-Centric Web Products",
         "formspreeURL": "https://formspree.io/f/mldbjnyr",
         "mailchimp": {
@@ -160,7 +160,7 @@
     },
     "footer": {
         "logoText": "Ibrahim",
-        "description": "Frontend Developer | Web Designer | Bridging Code & Design to Build Functional, User-Centric Web Products",
+        "description": "Frontend Developer | Design Engineer | Web Designer | Bridging Code & Design to Build Functional, User-Centric Web Products",
         "copy": "© 2025 Ibrahim Olukokun. All rights reserved.",
         "menuTitle": "Menu",
         "menu": [
