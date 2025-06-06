@@ -46,7 +46,7 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
                                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                                 {[0, 1, 2, 3, 4, 5].map((index) => {
                                     const project = projectsKeys[order[index]];
-                                    if (!project) return null; // Skip undefined entries
+                                    if (!project || !project.image) return null; // Safeguard
 
                                     return (
                                         <div className="col" key={index}>
