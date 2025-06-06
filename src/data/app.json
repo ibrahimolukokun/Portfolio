@@ -81,10 +81,7 @@
                         "label": "Slider",
                         "link": "/showcase"
                     },
-                    {
-                        "label": "Slider 2",
-                        "link": "/showcase-2"
-                    },
+                    
                     {
                         "label": "Project",
                         "link": "/projects/project-1"
