@@ -44,81 +44,103 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
 
                             <div className="container-fluid py-4">
                                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                                    {[0, 1, 2, 3, 4, 5].map((index) => (
-                                    <div className="col" key={index}>
-                                        <a href={projectsKeys[order[index]].link}
-                                                className="view-project-link"
-                                                target="_blank"
-                                                rel="noopener noreferrer">
-                                        <div className="card h-100 shadow border-0"  
-                                            style={{backgroundColor: '#14151A'}}>
-                                        {/* Image Section */}
-                                        <img
-                                            src={projectsKeys[order[index]].image}
-                                            alt={projectsKeys[order[index]].title}
-                                            className="card-img-top img-fluid rounded-top mil-scale-img"
-                                            data-value-1="0.8" data-value-2="1"
-                                            style={{ objectFit: 'cover', height: '250px', display: 'block',
-                                                width: '100%'}}
-                                        />
+                                {[0, 1, 2, 3, 4, 5].map((index) => {
+                                    const project = projectsKeys[order[index]];
+                                    if (!project) return null; // Skip undefined entries
 
-                                        {/* Content Section */}
-                                        <div className="card-body d-flex flex-column justify-content-between p-4"
+                                    return (
+                                        <div className="col" key={index}>
+                                        <a
+                                            href={project.link}
+                                            className="view-project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                         >
-                                            <div className="gap-3 mb-3">
-                                            <p className="mil-tag-text mb-2 text-muted"
-                                                style={{ fontSize: '0.75rem'}}>
-                                                {projectsKeys[order[index]].category}
-                                            </p>
-                                            <h4 className="mil-title-text fw-bold mb-3">
-                                                {projectsKeys[order[index]].title}
-                                            </h4>
-                                            <p className="text-secondary small mb-3"
-                                                style={{ fontSize: '0.75rem', color: '#B3B3B3',}}>
-                                                {projectsKeys[order[index]].content}
-                                            </p>
-                                            </div>
+                                            <div
+                                            className="card h-100 shadow border-0"
+                                            style={{ backgroundColor: '#14151A' }}
+                                            >
+                                            {/* Image */}
+                                            <img
+                                                src={project.image}
+                                                alt={project.title}
+                                                className="card-img-top img-fluid rounded-top mil-scale-img "
+                                                data-value-1="0.8"
+                                                data-value-2="1"
+                                                style={{
+                                                objectFit: 'cover',
+                                                height: '250px',
+                                                display: 'block',
+                                                width: '100%',
+                                                }}
+                                            />
 
-                                            <div className="">
-                                            {/* Skills */}
-                                            <div className="d-flex flex-wrap gap-2 mb-3">
-                                                {projectsKeys[order[index]].skills?.map((skill, i) => (
-                                                <span
-                                                    key={i}
-                                                    className=" mil-fs8 badge bg-light text-muted fw-normal me-2 mb-2"
+                                            {/* Content */}
+                                            <div className="card-body d-flex flex-column justify-content-between p-4">
+                                                <div className="gap-3 mb-3">
+                                                <p
+                                                    className="mil-tag-text mb-2 text-muted"
+                                                    style={{ fontSize: '0.7rem' }}
+                                                >
+                                                    {project.category}
+                                                </p>
+                                                <h4 className="mil-title-text fw-bold mb-3 text-white">
+                                                    {project.title}
+                                                </h4>
+                                                <p
+                                                    className="text-secondary mb-3"
                                                     style={{
-                                                        backgroundColor: 'rgba(115, 118, 123, 0.1)',
+                                                    fontSize: '0.75rem',
+                                                    color: '#B3B3B3',
+                                                    }}
+                                                >
+                                                    {project.content}
+                                                </p>
+                                                </div>
+
+                                                <div>
+                                                {/* Skills */}
+                                                <div className="d-flex flex-wrap gap-2 mb-3">
+                                                    {project.skills?.map((skill, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className="mil-fs8 badge text-muted fw-normal me-2 mb-2"
+                                                        style={{
+                                                        backgroundColor: 'rgba(255, 87, 34, 0.05)',
                                                         color: '#B3B3B3',
                                                         padding: '0.2rem 1rem',
                                                         borderRadius: '50px',
-                                                        fontSize: '0.75rem',
-                                                      }}
-                                                >
-                                                    {skill}
-                                                </span>
-                                                ))}
-                                            </div>
+                                                        fontSize: '0.7rem',
+                                                        border: '1px solidrgba(255, 86, 34, 0.87)',
+                                                        }}
+                                                    >
+                                                        {skill}
+                                                    </span>
+                                                    ))}
+                                                </div>
 
-                                            {/* View Project */}
-                                            <div
-                                                className="d-inline-flex align-items-center gap-1 text-primary small fw-medium text-decoration-none"
-                                                style={{
-                                                    color: '#fffff',
+                                                {/* View Project */}
+                                                <div
+                                                    className="d-inline-flex align-items-center gap-1 text-primary small fw-medium text-decoration-none view-link"
+                                                    style={{
+                                                    color: '#ff5722',
                                                     fontSize: '0.875rem',
                                                     fontWeight: 500,
-                                                  }}
-                                            >
-                                                <FaExternalLinkSquareAlt className="me-1" size={16} />
-                                                View Project
+                                                    transition: 'color 0.3s ease',
+                                                    cursor: 'pointer',
+                                                    }}
+                                                >
+                                                    <FaExternalLinkSquareAlt className="me-1 view-icon" size={16} />
+                                                    View Project
+                                                </div>
+                                                </div>
                                             </div>
-
                                             </div>
-                                        </div>
-
-                                        </div>
                                         </a>
-                                    </div>
-                                    ))}
+                                        </div>
+                                    );
+                                    })}
+
                                 </div>
                             </div>
 
