@@ -104,11 +104,11 @@ const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description
                                                     {project.skills?.map((skill, i) => (
                                                     <span
                                                         key={i}
-                                                        className="mil-fs8 badge text-muted fw-normal me-2 mb-2"
+                                                        className="skill-badge mil-fs8 badge text-muted fw-normal me-2 mb-2"
                                                         style={{
                                                         backgroundColor: 'rgba(255, 87, 34, 0.05)',
                                                         color: '#B3B3B3',
-                                                        padding: '0.2rem 1rem',
+                                                        padding: '0.2rem 0.5rem',
                                                         borderRadius: '50px',
                                                         fontSize: '0.7rem',
                                                         border: '1px solidrgba(255, 86, 34, 0.87)',

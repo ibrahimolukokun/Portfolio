@@ -332,6 +332,24 @@ social
     color: #ff5722 !important;
   }
 
+  .skill-badge {
+    background-color: rgba(255, 87, 34, 0.05);
+    color: #B3B3B3;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    border: 1px solid rgba(255, 86, 34, 0.343);
+  }
+  
+  /* Responsive adjustment for small screens */
+  @media (max-width: 576px) {
+    .skill-badge {
+      font-size: 0.6rem;
+      padding: 0.15rem 0.75rem;
+    }
+  }
+  
+
 /* -------------------------------------------
 
 portfolio
