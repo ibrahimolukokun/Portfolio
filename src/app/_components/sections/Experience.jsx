@@ -50,7 +50,16 @@ const ExperienceSection = () => {
               <h5 className="mil-fs20 mil-mt60 mil-mb20">Other Tools & Skills</h5>
               <ul className="mil-skill-list">
                 {Data.otherSkills.map((skill, index) => (
-                  <li key={`other-skill-${index}`} className="mil-fs18 mil-mb15">{skill}</li>
+                  <li key={`other-skill-${index}`} 
+                  className="mil-fs18 mil-mb15" 
+                  style={{
+                    backgroundColor: 'rgba(255, 87, 34, 0.05)',
+                    color: '#B3B3B3',
+                    padding: '0.2rem 0.5rem',
+                    borderRadius: '50px',
+                    fontSize: '0.7rem',
+                    border: '1px solid rgba(255, 86, 34, 0.87)',
+                    }}>{skill}</li>
                 ))}
               </ul>
             </div>
