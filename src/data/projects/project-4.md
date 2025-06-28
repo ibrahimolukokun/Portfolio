@@ -6,7 +6,7 @@ category: Landing Page
 link: "https://travelwisepro.vercel.app/"
 category_slug: ui-elements
 content: "A travel discovery platform that lets users explore destinations, view experiences, and plan their trips effortlessly."
-skills: ["React", "TailwindCSS", "JavaScript"]
+skills: ["React.js", "TailwindCSS", "JavaScript"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: square
 

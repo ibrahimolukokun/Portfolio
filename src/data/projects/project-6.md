@@ -6,7 +6,7 @@ category: Landing Page
 link: "https://neo-stream.vercel.app/"
 category_slug: logos
 content: "A modern landing page showcasing featured movies, built to display dynamic content using API calls."
-skills: ["HTML", "CSS", "JavaScript"]
+skills: ["React.js", "TailwindCSS", "JavaScript"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: vertical
 
