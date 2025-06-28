@@ -1,12 +1,12 @@
 ---
 #preview
-title: Food Recipe Finder
+title: Travel Agency App
 image: /img/portfolio/4.jpg
-category: Web Application
-link: "https://recipe-savvy.vercel.app/"
+category: Landing Page
+link: "https://travelwisepro.vercel.app/"
 category_slug: ui-elements
-content: "A searchable recipe platform using TheMealDB API, allowing users to find and view food recipes."
-skills: ["HTML", "CSS", "JavaScript"]
+content: "A travel discovery platform that lets users explore destinations, view experiences, and plan their trips effortlessly."
+skills: ["React", "TailwindCSS", "JavaScript"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: square
 
