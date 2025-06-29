@@ -46,7 +46,7 @@ async function Home1() {
       <Suspense fallback={<div>Loading...</div>}>
         <PortfolioSection
           projects={projects}
-          order={["project-1", "project-3", "project-5", "project-2", "project-4", "project-6"]}
+          order={["Project-1", "Project-3", "Project-5", "Project-2", "Project-4", "Project-6"]}
         />
       </Suspense>
       </div>
