@@ -1,5 +1,6 @@
 ---
 #preview
+id: "Project-6"
 title: Movie Info Landing Page
 image: /img/portfolio/6.jpg
 category: Landing Page
