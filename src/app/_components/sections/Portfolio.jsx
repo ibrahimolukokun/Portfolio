@@ -10,7 +10,8 @@ import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FaBehance, FaGithub } from 'react-icons/fa';
 
 
-const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description": ""}, paddingTop = 120, paddingBottom = 60, projects, order, btnBorder = true } ) => {
+const PortfolioSection = ( { heading = {"subitle": "", "title": "", "description": ""}, paddingTop = 120, paddingBottom = 60, projects, order={[
+    "Project-1", "Project-2", "Project-4", "Project-3", "Project-6", "Project-5" ]}, btnBorder = true } ) => {
 
     let projectsKeys = {};
 
