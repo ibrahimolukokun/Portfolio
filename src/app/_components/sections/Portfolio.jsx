@@ -91,6 +91,8 @@ const PortfolioSection = ({
                               src={project.image}
                               alt={project.title}
                               className="card-img-top img-fluid rounded-top mil-scale-img"
+                              data-value-1="0.8"
+                              data-value-2="1"
                               style={{
                                 objectFit: 'cover',
                                 height: '250px',
