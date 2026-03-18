@@ -20,7 +20,7 @@ const HeaderModule = () => {
 
           {/* Logo */}
           <Link href="/" className="ib-header__logo" onClick={() => setMobileOpen(false)}>
-            Ibrahim
+            Ibrahim Olukokun
             <span className="ib-header__logo-dot" aria-hidden="true" />
           </Link>
 
