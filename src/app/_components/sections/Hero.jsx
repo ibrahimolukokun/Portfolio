@@ -49,7 +49,7 @@ const HeroOne = ({ image }) => {
                 sizes="(max-width: 900px) 200px, 340px"
                 priority
                 alt="Ibrahim Olukokun"
-                style={{ objectFit: 'cover', objectPosition: 'center center' }}
+                style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
               />
             )}
           </div>

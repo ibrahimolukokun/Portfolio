@@ -288,7 +288,7 @@ body {
 .ib-hero__photo {
   position: relative;
   width: 340px;
-  height: 340px;
+  height: 400px;
   border-radius: 12px;
   overflow: hidden;
   background: var(--bg-2);
