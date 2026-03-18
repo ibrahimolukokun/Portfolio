@@ -1,9 +1,6 @@
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
 
-import AppData from "@data/app.json";
-
-import { getSortedPostsData } from "@library/posts";
 import { getSortedProjectsData } from "@library/projects";
 
 import OkaiLayout from "@layouts/OkaiLayout";
@@ -11,61 +8,139 @@ import OkaiLayout from "@layouts/OkaiLayout";
 import HeroSection from "@components/sections/Hero";
 import ExperienceSection from "@components/sections/Experience";
 import MyExperience from "@components/sections/MyExperience";
-import LatestPostsSection from "@components/sections/LatestPosts";
-import CallToActionTwoSection from "@components/sections/CallToActionTwo";
+import WritingSection from "@components/sections/Writing";
 
-const PortfolioSection = dynamic( () => import("@components/sections/Portfolio"), { ssr: true } );
+import { MdArrowOutward } from "react-icons/md";
+import { FaGithub, FaBehance, FaLinkedinIn } from 'react-icons/fa';
+
+const PortfolioSection = dynamic(
+  () => import("@components/sections/Portfolio"),
+  { ssr: true }
+);
 
 export const metadata = {
-  title: {
-		default: "Ibrahim Olukokun",
-		template: "%s | " + AppData.settings.siteName,
-	},
-  description: AppData.settings.siteDescription,
-}
+  title: "Ibrahim Olukokun — Product Designer & Founder",
+  description: "Product Designer and Design Engineer with 8+ years turning ideas into products that are beautifully designed and easy to use. From SaaS platforms and dashboards to design systems and no-code tools.",
+};
 
-async function Home1() {
-  const posts = await getAllPosts();
+async function Home() {
   const projects = await getAllProjects();
 
   return (
-    <OkaiLayout>
-      <HeroSection 
-      image={{ url: "/img/banners/1.jpg", alt: "banner" }}
-      title={"Hi. I am <span class='mil-accent'>Ibrahim</span> Olukokun"}
-      description={"I'm a UK-based frontend developer with a design-first mindset and a growing passion for building intuitive, accessible, and responsive web experiences."}
-      button={{ label: "View My Works", link: "#portfolio" }}
-      imgLayout="out-right"
+    <OkaiLayout footer="none">
+
+      {/* HERO */}
+      <HeroSection
+        image={{ url: "/img/banners/1.jpg", alt: "Ibrahim Olukokun" }}
       />
 
-      <ExperienceSection />
+      <hr className="ib-divider" />
 
-      <MyExperience />
-      
-      <div id="portfolio">
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* WORK */}
+      <Suspense fallback={<div style={{ padding: '96px 0', textAlign: 'center', color: 'var(--text-muted)' }}>Loading projects…</div>}>
         <PortfolioSection
           projects={projects}
-          order={["project-1", "project-3", "project-5", "project-2", "project-4", "project-6"]}
+          order={["project-1", "project-2", "project-3", "project-4", "project-5", "project-6"]}
         />
       </Suspense>
-      </div>
-      
-      
-      
-      <Suspense fallback={<div>Loading...</div>}>
-        <LatestPostsSection posts={posts} />
-      </Suspense>
-      <CallToActionTwoSection />
+
+      <hr className="ib-divider" />
+
+      {/* ABOUT */}
+      <ExperienceSection />
+
+      <hr className="ib-divider" />
+
+      {/* EXPERIENCE TIMELINE */}
+      <MyExperience />
+
+      <hr className="ib-divider" />
+
+      {/* WRITING */}
+      <WritingSection />
+
+      <hr className="ib-divider" />
+
+      {/* CONTACT */}
+      <section className="ib-section" id="contact">
+        <div className="ib-container">
+          <span className="ib-section__label">Contact</span>
+          <h2 className="ib-section__title">Let's work together</h2>
+
+          <div className="ib-contact__inner">
+            <p className="ib-contact__sub">
+              Whether you're a startup defining your product experience, or a growing company that needs a design partner who understands engineering, I'd love to hear from you.
+            </p>
+
+            <a href="mailto:iolukokun@gmail.com" className="ib-contact__email">
+              iolukokun@gmail.com ↗
+            </a>
+
+            <div className="ib-contact__socials">
+              <a
+                href="https://github.com/ibrahimolukokun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ib-contact__social"
+              >
+                <FaGithub /> GitHub
+              </a>
+              <a
+                href="https://behance.net/ibrahimolukokun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ib-contact__social"
+              >
+                <FaBehance /> Behance
+              </a>
+              <a
+                href="https://linkedin.com/in/ibrahimolukokun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ib-contact__social"
+              >
+                <FaLinkedinIn /> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr className="ib-divider" />
+
+      {/* FOOTER */}
+      <footer className="ib-footer">
+        <div className="ib-container">
+          <div className="ib-footer__inner">
+            <p className="ib-footer__copy">
+              © {new Date().getFullYear()} Ibrahim Olukokun. All rights reserved.
+            </p>
+            <ul className="ib-footer__links">
+              <li>
+                <a href="https://github.com/ibrahimolukokun" target="_blank" rel="noopener noreferrer" className="ib-footer__link">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://behance.net/ibrahimolukokun" target="_blank" rel="noopener noreferrer" className="ib-footer__link">
+                  Behance
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/ibrahimolukokun" target="_blank" rel="noopener noreferrer" className="ib-footer__link">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
     </OkaiLayout>
   );
-};
-export default Home1;
-
-async function getAllPosts() {
-  const allPosts = getSortedPostsData();
-  return allPosts;
 }
+
+export default Home;
 
 async function getAllProjects() {
   const allProjects = getSortedProjectsData();

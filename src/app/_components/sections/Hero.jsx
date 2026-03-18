@@ -1,53 +1,62 @@
-import Link from "next/link";
 import Image from 'next/image';
 
-const HeroOne = ({ image, title, description, button, imgLayout = false, rowReverse = false }) => {
+const HeroOne = ({ image }) => {
   return (
-    <>
-      {/* banner */}
-      <div className="mil-banner">
-        <div className="container">
-          <div className={rowReverse ? "row flex-sm-row-reverse mil-aic" : "row mil-aic"}>
-            <div className="col-12 col-lg-6">
-              <div className="mil-banner-text">
+    <section className="ib-hero">
+      <div className="ib-container">
+        <div className="ib-hero__inner">
 
-                {/* Title */}
-                <h1 className={button ? "mil-fs68 mil-mb20" : "mil-fs68"} dangerouslySetInnerHTML={{ __html: title }} />
+          {/* Left: Text */}
+          <div className="ib-hero__content">
+            <div className="ib-hero__label">Product Designer - Design Engineer</div>
 
-                {/* Description */}
-                <p className="mil-mb40 mil-text-lg" style={{ fontSize: "20px", lineHeight: "1.6", maxWidth: "90%", marginBottom: "40px" }}>
-                  {description}
-                </p>
+            <h1 className="ib-hero__headline">
+              I design products<br />
+              people love to use,<br />
+              then help build them.
+            </h1>
 
-                {/* Button */}
-                {button !== false && (
-                  <Link href={button.link} className="mil-btn mil-c-gone">
-                    {button.label}
-                  </Link>
-                )}
-              </div>
+            <p className="ib-hero__sub">
+              Product designer with 8+ years of hands-on experience turning ideas into products
+              that are beautifully designed and genuinely easy to use. From SaaS platforms and
+              dashboards to design systems and no-code tools.
+            </p>
+
+            <div className="ib-hero__ctas">
+              <a href="#contact" className="ib-btn-primary">
+                Let's talk
+              </a>
+              <a
+                href="mailto:iolukokun@gmail.com"
+                className="ib-btn-ghost"
+              >
+                Send Email ↗
+              </a>
             </div>
 
-            {/* Image */}
-            <div className="col-12 col-lg-6 mil-banner-image-frame">
-              <div className={!imgLayout ? "mil-banner-img" : `mil-banner-img mil-${imgLayout}`}>
-                <Image
-                  src={image.url}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 80vw"
-                  priority
-                  alt={image.alt}
-                  className="mil-scale-img"
-                  data-value-1=".75"
-                  data-value-2="1.11"
-                />
-              </div>
+            <div className="ib-hero__availability">
+              <span className="ib-hero__dot" />
+              Available for select projects
             </div>
           </div>
+
+          {/* Right: Photo */}
+          <div className="ib-hero__photo">
+            {image && (
+              <Image
+                src="/img/Ibrahim_Image.png"
+                fill
+                sizes="(max-width: 900px) 200px, 340px"
+                priority
+                alt="Ibrahim Olukokun"
+                style={{ objectFit: 'cover', objectPosition: 'center center' }}
+              />
+            )}
+          </div>
+
         </div>
       </div>
-      {/* banner end */}
-    </>
+    </section>
   );
 };
 

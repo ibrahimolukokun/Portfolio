@@ -1,7 +1,7 @@
 {
     "settings": {
-        "siteName": "Frontend Developer | Design Engineer | Web Designer",
-        "siteDescription": "Bridging Code & Design to Build Functional, User-Centric Web Products",
+        "siteName": "Ibrahim Olukokun — Product Designer & Founder",
+        "siteDescription": "Product Designer and Founder. I design SaaS platforms, dashboards, and digital systems for growing companies — then help build them.",
         "formspreeURL": "https://formspree.io/f/mldbjnyr",
         "mailchimp": {
             "url": "",
@@ -16,210 +16,40 @@
             "value": "iolukokun@gmail.com"
         },
         "menu": [
-            {
-                "label": "Home",
-                "link": "/",
-                "children": [
-                    {
-                        "label": "Type 1",
-                        "link": "/"
-                    },
-                    {
-                        "label": "Type 2",
-                        "link": "/home-2"
-                    },
-                    
-                    {
-                        "label": "Type 4",
-                        "link": "/home-4"
-                    },
-                
-                    {
-                        "label": "Type 6",
-                        "link": "/home-6"
-                    },
-                    {
-                        "label": "Type 7",
-                        "link": "/home-7"
-                    },
-                    
-                    {
-                        "label": "Type 10",
-                        "link": "/home-10"
-                    },
-                    {
-                        "label": "Type 11",
-                        "link": "/home-11"
-                    },
-                    {
-                        "label": "Type 12",
-                        "link": "/home-12"
-                    },
-                    {
-                        "label": "Type 13",
-                        "link": "/home-13"
-                    }
-                ]
-            },
-            {
-                "label": "Portfolio",
-                "link": "/projects",
-                "children": [
-                    {
-                        "label": "Type 1",
-                        "link": "/projects"
-                    },
-                    {
-                        "label": "Type 2",
-                        "link": "/projects-2"
-                    },
-                    {
-                        "label": "Type 3",
-                        "link": "/projects-3"
-                    },
-                   
-                    
-                    {
-                        "label": "Project",
-                        "link": "/projects/project-1"
-                    }
-                ]
-            },
-            {
-                "label": "Pages",
-                "link": "/about",
-                "children": [
-                    {
-                        "label": "About",
-                        "link": "/about"
-                    },
-                    {
-                        "label": "Services",
-                        "link": "/services"
-                    },
-                    {
-                        "label": "Pricing",
-                        "link": "/pricing"
-                    },
-                    {
-                        "label": "Contact",
-                        "link": "/contact"
-                    },
-                    {
-                        "label": "Store",
-                        "link": "/shop"
-                    },
-                    {
-                        "label": "Store Item",
-                        "link": "/product"
-                    },
-                    {
-                        "label": "Coming soon",
-                        "link": "/coming-soon"
-                    },
-                    {
-                        "label": "404",
-                        "link": "/404"
-                    }
-                ]
-            },
-            {
-                "label": "Blog",
-                "link": "/blog",
-                "children": [
-                    {
-                        "label": "List",
-                        "link": "/blog"
-                    },
-                    {
-                        "label": "Publication",
-                        "link": "/blog/the-infrastructure-that-powers-the-world"
-                    }
-                ]
-            }
+            { "label": "Work", "link": "/#work", "children": [] },
+            { "label": "About", "link": "/#about", "children": [] },
+            { "label": "Writing", "link": "/#writing", "children": [] },
+            { "label": "Contact", "link": "/#contact", "children": [] }
         ]
     },
     "footer": {
         "logoText": "Ibrahim",
-        "description": "Frontend Developer | Design Engineer | Web Designer | Bridging Code & Design to Build Functional, User-Centric Web Products",
+        "description": "Product Designer & Founder",
         "copy": "© 2025 Ibrahim Olukokun. All rights reserved.",
         "menuTitle": "Menu",
         "menu": [
-            {
-                "label": "About us",
-                "link": "/about"
-            },
-            {
-                "label": "Services",
-                "link": "/services"
-            },
-            {
-                "label": "Projects",
-                "link": "/projects"
-            },
-            {
-                "label": "Contact",
-                "link": "/contact"
-            }
+            {"label": "Work", "link": "/#work"},
+            {"label": "About", "link": "/#about"},
+            {"label": "Contact", "link": "/#contact"}
         ],
         "contactTitle": "Let's talk",
         "contact": [
-            {
-                "label": "Phone",
-                "value": "+44 7883 978 353"
-            },
-            {
-                "label": "Email",
-                "value": "iolukokun@gmail.com"
-            },
-            {
-                "label": "Address",
-                "value": "United Kingdom"
-            }
+            {"label": "Email", "value": "iolukokun@gmail.com"},
+            {"label": "Location", "value": "United Kingdom"}
         ],
         "backLabel": "Back to top"
     },
     "social": [
-            {
-                "link": "https://github.com/ibrahimolukokun",
-                "icon": "fab fa-github",
-                "title": "GitHub"
-            },
-            {
-                "link": "https://behance.net/ibrahimolukokun",
-                "icon": "fab fa-behance",
-                "title": "Behance"
-            },
-            {
-                "link": "https://linkedin.com/in/ibrahimolukokun",
-                "icon": "fab fa-linkedin-in",
-                "title": "LinkedIn"
-            },
-            {
-                "link": "mailto:iolukokun@gmail.com",
-                "icon": "fas fa-envelope",
-                "title": "Email"
-            }
-        
+        {"link": "https://github.com/ibrahimolukokun", "icon": "fab fa-github", "title": "GitHub"},
+        {"link": "https://behance.net/ibrahimolukokun", "icon": "fab fa-behance", "title": "Behance"},
+        {"link": "https://linkedin.com/in/ibrahimolukokun", "icon": "fab fa-linkedin-in", "title": "LinkedIn"},
+        {"link": "mailto:iolukokun@gmail.com", "icon": "fas fa-envelope", "title": "Email"}
     ],
     "projects": {
         "categories": [
-            {
-                "name": "Web Templates",
-                "slug": "web-templates"
-            },
-            {
-                "name": "UI Elements",
-                "slug": "ui-elements"
-            },
-            {
-                "name": "Logos",
-                "slug": "logos"
-            },
-            {
-                "name": "Drawings",
-                "slug": "drawings"
-            }
+            {"name": "Web Application", "slug": "web-application"},
+            {"name": "UI/UX Case Study", "slug": "ui-ux-case-study"},
+            {"name": "Landing Page", "slug": "landing-page"}
         ]
     }
 }

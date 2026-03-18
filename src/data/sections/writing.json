@@ -1,0 +1,23 @@
+{
+    "title": "Thoughts on design & building",
+    "articles": [
+        {
+            "title": "Why Most SaaS Dashboards Fail Their Users",
+            "platform": "Blog",
+            "year": "2024",
+            "link": "#"
+        },
+        {
+            "title": "Designing for Founders: Shipping Fast Without Breaking UX",
+            "platform": "Blog",
+            "year": "2024",
+            "link": "#"
+        },
+        {
+            "title": "From Designer to Founder: What Product Design Taught Me About Business",
+            "platform": "Blog",
+            "year": "2023",
+            "link": "#"
+        }
+    ]
+}

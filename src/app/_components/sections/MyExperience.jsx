@@ -1,41 +1,34 @@
-import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import Data from "@data/sections/my-experience.json";
 
 const MyExperience = () => {
   return (
-    <section className="mil-experience-section container">
-      <div className="mil-container mil-cta mil-up">
-        <h2 className="mil-section-title">{Data.title}</h2>
-        <div className="mil-experience-list">
-          {Data.experiences.map((exp, index) => (
-            <a
-              href={`https://${exp.website}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mil-experience-item"
-              key={index}
-            >
-              <span className="mil-arrow-icon">
-              <MdArrowOutward />
-              </span>
-              <span className="mil-experience-id">{exp.id}.</span>
-              <div className="mil-experience-content">
-                 <div className="mil-role-year-wrapper">
-                    <span className="mil-experience-role">{exp.role}</span>
-                    <span className="mil-experience-year">{exp.year}</span>
-                </div>
-                <div className="mil-company-website-wrapper">
-                    <span className="mil-experience-company">{exp.company}</span>
-                    <span className="mil-experience-website">{exp.website}</span>
-                </div>
-                </div>
-              
-            
+    <section className="ib-section">
+      <div className="ib-container">
+        <span className="ib-section__label">Experience</span>
+        <h2 className="ib-section__title">{Data.title}</h2>
 
-            </a>
+        <ul className="ib-exp__list">
+          {Data.experiences.map((exp, index) => (
+            <li key={index}>
+              <a
+                href={exp.website !== '#' ? `https://${exp.website}` : '#'}
+                target={exp.website !== '#' ? '_blank' : undefined}
+                rel="noopener noreferrer"
+                className="ib-exp__item"
+              >
+                <div className="ib-exp__left">
+                  <span className="ib-exp__role">{exp.role}</span>
+                  <span className="ib-exp__company">@ {exp.company}</span>
+                </div>
+                <div className="ib-exp__right">
+                  <span className="ib-exp__period">{exp.period}</span>
+                  <MdArrowOutward className="ib-exp__arrow" />
+                </div>
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
