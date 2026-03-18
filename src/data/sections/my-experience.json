@@ -1,34 +1,40 @@
 {
-    "title": "My Experience",
+    "title": "Where I've worked",
     "experiences": [
       {
         "id": "01",
-        "role": "Frontend Developer",
-        "year": "2024",
-        "company": "Dev and Design",
-        "website": "devdesignhq.com"
+        "role": "Founder & Creative Lead",
+        "period": "2018 – Present",
+        "company": "Contrivea",
+        "website": "contrivea.com"
       },
       {
         "id": "02",
-        "role": "Website Designer",
-        "year": "2022",
-        "company": "USCC",
-        "website": "uscloudconsulting.com"
-      },
-      {
-        "id": "03",
-        "role": "UI/UX Designer",
-        "year": "2021",
-        "company": "Upwork",
+        "role": "Independent Product & Design Consultant",
+        "period": "2021 – Present",
+        "company": "Upwork (Top Rated Plus · Top 3% Globally)",
         "website": "upwork.com"
       },
       {
+        "id": "03",
+        "role": "Product Designer",
+        "period": "Jul – Oct 2024",
+        "company": "Ruth Miskin Training",
+        "website": "ruthmiskin.com"
+      },
+      {
         "id": "04",
-        "role": "Website Developer",
-        "year": "2018",
-        "company": "Contrivea",
-        "website": "contrivea.com"
+        "role": "Co-Founder & Product Designer",
+        "period": "2024 – Present",
+        "company": "Mentosure",
+        "website": "mentosure.com"
+      },
+      {
+        "id": "05",
+        "role": "Founder & Community Lead",
+        "period": "2025 – Present",
+        "company": "Tech Growth Circle",
+        "website": "#"
       }
     ]
   }
-  

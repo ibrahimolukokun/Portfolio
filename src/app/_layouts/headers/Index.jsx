@@ -1,84 +1,100 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import AppData from "@data/app.json";
-import { usePathname } from 'next/navigation';
+import { useState } from "react";
 import Link from "next/link";
 
-const HeaderModule = ( { layout } ) => {
-    const [toggle, setToggle] = useState(false);
-    const [activeSubMenu, setActiveSubMenu] = useState(null);
-    const asPath = usePathname();
+const navLinks = [
+  { label: "Work", href: "/#work" },
+  { label: "About", href: "/#about" },
+  { label: "Writing", href: "/#writing" },
+  { label: "Contact", href: "/#contact" },
+];
 
-    const isPathActive = (path) => {
-        return (asPath.indexOf(path) !== -1) && asPath === path;
-    };
+const HeaderModule = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-    const handleSubMenuClick = (index, e) => {
-        e.preventDefault();
-        setActiveSubMenu(activeSubMenu === index ? null : index);
-    };
-    
-    useEffect(() => {
-        // close mobile menu
-        setToggle(false);
-    }, [asPath]);
+  return (
+    <header className="ib-header">
+      <div className="ib-container">
+        <div className="ib-header__inner">
 
-    const menuOpen = () => {
-        setToggle(!toggle);
-    }
+          {/* Logo */}
+          <Link href="/" className="ib-header__logo" onClick={() => setMobileOpen(false)}>
+            Ibrahim
+            <span className="ib-header__logo-dot" aria-hidden="true" />
+          </Link>
 
-    return (
-        <>
-            {/* top panel */}
-            <div className={layout == 'transparent' ? "mil-top-panel mil-transparent" : "mil-top-panel"}>
-                <div className="container">
-                    <div className="row mil-aic">
-                        <div className="col-6">
-                            <Link href="/" className="mil-logo mil-c-gone">{AppData.header.logoText}</Link>
-                        </div>
-                        <div className="col-6 mil-jce mil-aic ">
-                            <a href="mailto:iolukokun.com">
-                            <div className="mil-phone mil-group-text mil-fs14"><span className="mil-soft">{AppData.header.contact.label}</span><span className="mil-light">{AppData.header.contact.value}</span></div>
-                            </a>
-                            
-                            <Link href="https://drive.google.com/file/d/1yKEvDMtDg-iTc140sQg-UVo1TlE62YLE/view?usp=sharing" target="_blank" className="mil-btn mil-btn-border mil-c-gone flex items-center gap-2" > RESUME
-                            </Link>
+          {/* Desktop nav */}
+          <nav aria-label="Main navigation">
+            <ul className="ib-header__nav">
+              {navLinks.map(link => (
+                <li key={link.label}>
+                  <a href={link.href}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* top panel end */}
+          {/* Resume + hamburger */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <a
+              href="https://drive.google.com/file/d/1yKEvDMtDg-iTc140sQg-UVo1TlE62YLE/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ib-header__resume"
+            >
+              Resume ↗
+            </a>
 
-            {/* menu */}
-            <div className={`mil-menu-window ${toggle ? "mil-active" : ""}`}>
-                <div className="container">
-                    <ul className="mil-main-menu mil-c-gone">
-                        {AppData.header.menu.map((item, index) => (
-                        <li className={`menu-item ${item.children.length > 0 ? "menu-item-has-children" : ""} ${isPathActive(item.link) ? "current-menu-item" : ""}`} key={`header-menu-item-${index}`}>
-                            <Link href={item.link} onClick={item.children.length > 0  ? (e) => handleSubMenuClick(index, e) : null}>{item.label}</Link>
-                            {item.children.length > 0 && (
-                            <ul className={activeSubMenu === index ? 'sub-menu mil-active' : 'sub-menu'}>
-                                {item.children.map((subitem, subIndex) => (
-                                <li key={`header-submenu-item-${subIndex}`} className={isPathActive(subitem.link) ? "menu-item current-menu-item" : "menu-item"}>
-                                    <Link href={subitem.link}>{subitem.label}</Link>
-                                </li>
-                                ))}
-                            </ul>
-                            )}
-                        </li>
-                        ))}
-                    </ul>
-                    <ul className="mil-social mil-center">
-                        {AppData.social.map((item, key) => (
-                        <li key={`header-social-item-${key}`}><a href={item.link} target="_blank" title={item.title} className="mil-c-gone"><i className={item.icon}></i></a></li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-            {/* menu end */}
-        </>
-    );
+            <button
+              className="ib-hamburger"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? (
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M3 6H17M3 10H17M3 14H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              )}
+            </button>
+          </div>
+
+        </div>
+
+        {/* Mobile nav */}
+        {mobileOpen && (
+          <nav className="ib-mobile-nav" aria-label="Mobile navigation">
+            <ul>
+              {navLinks.map(link => (
+                <li key={link.label}>
+                  <a href={link.href} onClick={() => setMobileOpen(false)}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1yKEvDMtDg-iTc140sQg-UVo1TlE62YLE/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--accent)' }}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Resume ↗
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
+
+      </div>
+    </header>
+  );
 };
+
 export default HeaderModule;

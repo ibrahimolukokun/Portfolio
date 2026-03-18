@@ -1,74 +1,77 @@
-import Data from "@data/sections/experience.json";
-import Link from "next/link";
-
 const ExperienceSection = () => {
-  return (
-    <div>
-      <div className="container">
-        <div className="row mil-jcb">
+  const designSkills = [
+    "Figma", "UX Research", "Prototyping", "Design Systems",
+    "Information Architecture", "User Testing", "Wireframing", "Visual Design"
+  ];
 
-          {/* Left Column: About Me */}
-          <div className="col-lg-6">
-            <div className="mil-exp-box mil-up">
-              <div className="mil-exp-content mil-up">
-                <h5 className="mil-accent mil-mb-20">{Data.label.title}</h5>
-                <h4 className="mil-exp-text mil-fs42">{Data.description}</h4>
-              </div>
+  const frontendSkills = [
+    "React", "Next.js", "HTML & CSS", "TailwindCSS",
+    "JavaScript", "Webflow", "WordPress"
+  ];
+
+  const toolSkills = [
+    "Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "CorelDraw"
+  ];
+
+  return (
+    <section className="ib-section" id="about">
+      <div className="ib-container">
+        <span className="ib-section__label">About</span>
+        <h2 className="ib-section__title">A little about me</h2>
+
+        <div className="ib-about__inner">
+
+          {/* Left: Bio */}
+          <div>
+            <div className="ib-about__bio">
+              <p>
+                I'm a <strong>Product Designer and Design Engineer</strong> with 8 years of experience building digital products that work: dashboards, SaaS platforms, and scalable interfaces for companies at every stage.
+              </p>
+              <p>
+                At <strong>Contrivea</strong>, the practice I founded, I lead product design for clients in fintech, ed-tech, and B2B SaaS. I work at the intersection of design thinking and engineering. I don't just design what's beautiful, I design what ships and performs.
+              </p>
+              <p>
+                On <strong>Upwork</strong>, I'm recognised as Top Rated Plus, in the top 3% of professionals globally, with a 100% job success score across 4+ years of independent consulting for startups, scale-ups, and digital platforms across North America, Europe, and Asia.
+              </p>
+              <p>
+                I'm also co-founder of <strong>Mentosure</strong>, an ed-tech platform for career transitions, and lead <strong>Tech Growth Circle</strong>, a learning community of 30+ designers and developers building their way into tech.
+              </p>
             </div>
           </div>
 
-          {/* Right Column: Skills */}
-          <div className="col-lg-6 mil-p-120-0">
-
-            <h5 className="mil-fs30 mil-light mil-mb30 mil-up">Key Skills</h5>
-
-            {/* Sliders for major skills */}
-            <div className="mil-counter-grid">
-            {Data.majorSkills.map((item, key) => (
-              <div className={key+1 !== Data.majorSkills.length ? "mil-counter-item mil-mb0" : "mil-counter-item"} key={`major-skill-${key}`}>
-
-                <div className="mil-flex-between mil-align-center mil-mb20">
-                <h5 className="mil-fs14 mil-up">
-                    {item.label} <Link href={item.link} className="mil-text-link"></Link>
-                </h5>
-                <div className="mil-counter-number mil-fs18">
-                    <span className="mil-counter" data-number={item.num}>00</span>
-                    <span className="mil-percent">{item.numAfter}</span>
-                </div>
-                </div>
-                
-                <div className="mil-prog-track mil-mb20 mil-add-class mil-up">
-                  <div className="mil-prog" data-number={item.num}></div>
-                </div>
-
-              </div>
-            ))}
-            </div>
-
-            {/* List for other skills */}
-            <div className="mil-up mil-mt60">
-              <h5 className="mil-fs20 mil-mt60 mil-mb20">Other Tools & Skills</h5>
-              <ul className="mil-skill-list">
-                {Data.otherSkills.map((skill, index) => (
-                  <li key={`other-skill-${index}`} 
-                  className="mil-fs18 mil-mb15" 
-                  style={{
-                    backgroundColor: 'rgba(255, 87, 34, 0.05)',
-                    color: '#B3B3B3',
-                    padding: '0.2rem 0.5rem',
-                    borderRadius: '50px',
-                    fontSize: '0.7rem',
-                    border: '1px solid rgba(255, 86, 34, 0.87)',
-                    }}>{skill}</li>
+          {/* Right: Skills */}
+          <div>
+            <div className="ib-skills__group">
+              <span className="ib-skills__group-label">Design</span>
+              <div className="ib-skills__tags">
+                {designSkills.map(s => (
+                  <span key={s} className="ib-skills__tag">{s}</span>
                 ))}
-              </ul>
+              </div>
             </div>
 
+            <div className="ib-skills__group">
+              <span className="ib-skills__group-label">Frontend</span>
+              <div className="ib-skills__tags">
+                {frontendSkills.map(s => (
+                  <span key={s} className="ib-skills__tag">{s}</span>
+                ))}
+              </div>
+            </div>
+
+            <div className="ib-skills__group">
+              <span className="ib-skills__group-label">Creative Tools</span>
+              <div className="ib-skills__tags">
+                {toolSkills.map(s => (
+                  <span key={s} className="ib-skills__tag">{s}</span>
+                ))}
+              </div>
+            </div>
           </div>
 
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
