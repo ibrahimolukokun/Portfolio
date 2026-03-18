@@ -1,5 +1,6 @@
 ---
 #preview
+id: "Project-2"
 title: E-learning Platform
 image: /img/portfolio/Zafunda_Cover.png
 category: UI/UX Case Study
