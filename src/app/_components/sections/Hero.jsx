@@ -11,9 +11,7 @@ const HeroOne = ({ image }) => {
             <div className="ib-hero__label">Product Designer - Design Engineer</div>
 
             <h1 className="ib-hero__headline">
-              I design products<br />
-              people love to use,<br />
-              then help build them.
+              I design products people love to use, then help build them.
             </h1>
 
             <p className="ib-hero__sub">
