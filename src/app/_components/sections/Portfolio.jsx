@@ -67,7 +67,7 @@ const PortfolioSection = ({ projects, order }) => {
             className="ib-btn-ghost"
           >
             <FaBehance />
-            More on Behance ↗
+            More on Behance <MdArrowOutward style={{ verticalAlign: 'middle' }} />
           </a>
           <a
             href="https://github.com/ibrahimolukokun"
@@ -76,7 +76,7 @@ const PortfolioSection = ({ projects, order }) => {
             className="ib-btn-ghost"
           >
             <FaGithub />
-            GitHub ↗
+            GitHub <MdArrowOutward style={{ verticalAlign: 'middle' }} />
           </a>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { MdArrowOutward } from "react-icons/md";
 
 const navLinks = [
   { label: "Work", href: "/#work" },
@@ -43,7 +44,7 @@ const HeaderModule = () => {
               rel="noopener noreferrer"
               className="ib-header__resume"
             >
-              Resume ↗
+              Resume <MdArrowOutward style={{ verticalAlign: 'middle' }} />
             </a>
 
             <button
@@ -85,7 +86,7 @@ const HeaderModule = () => {
                   style={{ color: 'var(--accent)' }}
                   onClick={() => setMobileOpen(false)}
                 >
-                  Resume ↗
+                  Resume <MdArrowOutward style={{ verticalAlign: 'middle' }} />
                 </a>
               </li>
             </ul>

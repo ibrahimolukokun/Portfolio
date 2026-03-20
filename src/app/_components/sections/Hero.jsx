@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { MdArrowOutward } from "react-icons/md";
 
 const HeroOne = ({ image }) => {
   return (
@@ -28,7 +29,7 @@ const HeroOne = ({ image }) => {
                 href="mailto:iolukokun@gmail.com"
                 className="ib-btn-ghost"
               >
-                Send Email ↗
+                Send Email <MdArrowOutward style={{ verticalAlign: 'middle' }} />
               </a>
             </div>
 

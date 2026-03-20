@@ -73,7 +73,7 @@ async function Home() {
             </p>
 
             <a href="mailto:iolukokun@gmail.com" className="ib-contact__email">
-              iolukokun@gmail.com ↗
+              iolukokun@gmail.com <MdArrowOutward style={{ verticalAlign: 'middle' }} />
             </a>
 
             <div className="ib-contact__socials">
