@@ -1,12 +1,12 @@
 ---
 #preview
 id: "Project-1"
-title: "Project Management Dashboard"
-image: /img/portfolio/1.jpg
+title: "Targe - The Modern Workspace"
+image: /img/portfolio/targe_caseStudy.gif
 category: Web Application
 category_slug: web-templates
-link: "https://task-management-system-dashboard.vercel.app/"
-content: "A responsive dashboard app built to manage tasks, projects, and team collaboration efficiently."
+link: "https://targe.app/"
+content: "A project management SaaS platform to help makers, founders, and product teams manage tasks efficiently."
 skills: ["React.js", "JavaScript", "TailwindCSS"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: horizontal
