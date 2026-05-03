@@ -2,7 +2,7 @@
 #preview
 id: "Project-2"
 title: E-learning Platform
-image: /img/portfolio/Zafunda_Cover.png
+image: /img/portfolio/zafunda.gif
 category: UI/UX Case Study
 category_slug: web-templates
 link: "https://www.behance.net/gallery/148527331/Zafunda-Learning-Platform-UI-Design-Web-Design"
