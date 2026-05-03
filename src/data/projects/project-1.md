@@ -2,7 +2,7 @@
 #preview
 id: "Project-1"
 title: "Targe - The Modern Workspace"
-image: /img/portfolio/targe_caseStudy.gif
+image: /img/portfolio/targecasestudy1.gif
 category: Web Application
 category_slug: web-templates
 link: "https://targe.app/"
