@@ -1,7 +1,7 @@
 {
     "settings": {
-        "siteName": "Ibrahim Olukokun — Product Designer & Founder",
-        "siteDescription": "Product Designer and Founder. I design SaaS platforms, dashboards, and digital systems for growing companies — then help build them.",
+        "siteName": "Ibrahim Olukokun — Product Designer | Design Engineer",
+        "siteDescription": "Product Designer | Design Engineer. I design SaaS platforms, dashboards, and digital systems for growing companies — then help build them.",
         "formspreeURL": "https://formspree.io/f/mldbjnyr",
         "mailchimp": {
             "url": "",
@@ -24,8 +24,8 @@
     },
     "footer": {
         "logoText": "Ibrahim",
-        "description": "Product Designer & Founder",
-        "copy": "© 2025 Ibrahim Olukokun. All rights reserved.",
+        "description": "Product Designer | Design Engineer",
+        "copy": "© 2026 Ibrahim Olukokun. All rights reserved.",
         "menuTitle": "Menu",
         "menu": [
             {"label": "Work", "link": "/#work"},

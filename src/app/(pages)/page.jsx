@@ -19,7 +19,7 @@ const PortfolioSection = dynamic(
 );
 
 export const metadata = {
-  title: "Ibrahim Olukokun — Product Designer & Founder",
+  title: "Ibrahim Olukokun — Product Designer | Design Engineer",
   description: "Product Designer and Design Engineer with 8+ years turning ideas into products that are beautifully designed and easy to use. From SaaS platforms and dashboards to design systems and no-code tools.",
 };
 

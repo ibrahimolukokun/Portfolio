@@ -28,7 +28,7 @@ const ExperienceSection = () => {
                 I'm a <strong>Product Designer and Design Engineer</strong> with 8 years of experience building digital products that work: dashboards, SaaS platforms, and scalable interfaces for companies at every stage.
               </p>
               <p>
-                At <strong>Contrivea</strong>, the practice I founded, I lead product design for clients in fintech, ed-tech, and B2B SaaS. I work at the intersection of design thinking and engineering. I don't just design what's beautiful, I design what ships and performs.
+                At <strong>Contrivea</strong>, I lead product design for clients in fintech, ed-tech, and B2B SaaS. I work at the intersection of design thinking and engineering. I don't just design what's beautiful, I design what ships and performs.
               </p>
               <p>
                 On <strong>Upwork</strong>, I'm recognised as Top Rated Plus, in the top 3% of professionals globally, with a 100% job success score across 4+ years of independent consulting for startups, scale-ups, and digital platforms across North America, Europe, and Asia.
