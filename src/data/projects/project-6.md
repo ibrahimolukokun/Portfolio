@@ -1,12 +1,12 @@
 ---
 #preview
 id: "Project-6"
-title: Movie Info Landing Page
-image: /img/portfolio/6.jpg
+title: Fun Discovery Platform
+image: /img/portfolio/funcity.gif
 category: Landing Page
-link: "https://neo-stream.vercel.app/"
+link: "#"
 category_slug: logos
-content: "A modern landing page showcasing featured movies, built to display dynamic content using API calls."
+content: "A location-based social discovery platform built to connect people with the best local experiences"
 skills: ["React.js", "TailwindCSS", "JavaScript"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: vertical

@@ -2,7 +2,7 @@
 #preview
 id: "Project-4"
 title: Travel Agency App
-image: /img/portfolio/4.jpg
+image: /img/portfolio/travelwise.gif
 category: Landing Page
 link: "https://travelwisepro.vercel.app/"
 category_slug: ui-elements

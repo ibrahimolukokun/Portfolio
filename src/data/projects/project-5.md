@@ -2,7 +2,7 @@
 #preview
 id: "Project-5"
 title: Food Delivery App
-image: /img/portfolio/5.jpg
+image: /img/portfolio/belleful.gif
 category: UI/UX Case Study
 link: "https://www.behance.net/gallery/143540529/Food-Delivery-App-Mobile-UI-Design"
 category_slug: ui-elements

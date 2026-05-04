@@ -2,7 +2,7 @@
 #preview
 id: "Project-3"
 title: Online Banking App
-image: /img/portfolio/3.jpg
+image: /img/portfolio/fintoShowcase.gif
 category: UI/UX Case Study
 link: "https://www.behance.net/gallery/144319179/Finto-Digital-Banking-Platform"
 category_slug: web-templates
