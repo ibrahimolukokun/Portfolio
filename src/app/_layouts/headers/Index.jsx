@@ -39,7 +39,7 @@ const HeaderModule = () => {
           {/* Resume + hamburger */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <a
-              href="https://drive.google.com/file/d/1yKEvDMtDg-iTc140sQg-UVo1TlE62YLE/view?usp=sharing"
+              href="https://drive.google.com/file/d/1vnRHzvcK4e61iVj4sAKDtX5gQrbqwWtP/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="ib-header__resume"
@@ -80,7 +80,7 @@ const HeaderModule = () => {
               ))}
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1yKEvDMtDg-iTc140sQg-UVo1TlE62YLE/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1vnRHzvcK4e61iVj4sAKDtX5gQrbqwWtP/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: 'var(--accent)' }}
