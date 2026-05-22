@@ -3,11 +3,11 @@
 id: "Project-1"
 title: "Targe - The Modern Workspace"
 image: /img/portfolio/targecasestudy1.gif
-category: Web Application
-category_slug: web-templates
+category: Shipped Product
+category_slug: shipped-product
 link: "https://targe.app/"
-content: "A project management SaaS platform to help makers, founders, and product teams manage tasks efficiently."
-skills: ["React.js", "JavaScript", "TailwindCSS"]
+content: "Project management SaaS for founders and product teams. I led product design and built the frontend - live at targe.app."
+skills: ["Product Design", "React.js", "TailwindCSS"]
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: horizontal
 

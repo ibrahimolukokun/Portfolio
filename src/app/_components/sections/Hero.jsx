@@ -22,8 +22,8 @@ const HeroOne = ({ image }) => {
             </p>
 
             <div className="ib-hero__ctas">
-              <a href="#contact" className="ib-btn-primary">
-                Let's talk
+              <a href="#work" className="ib-btn-primary">
+              View Work
               </a>
               <a
                 href="mailto:iolukokun@gmail.com"

@@ -47,6 +47,7 @@
     ],
     "projects": {
         "categories": [
+            {"name": "Shipped Product", "slug": "shipped-product"},
             {"name": "Web Application", "slug": "web-application"},
             {"name": "UI/UX Case Study", "slug": "ui-ux-case-study"},
             {"name": "Landing Page", "slug": "landing-page"}
