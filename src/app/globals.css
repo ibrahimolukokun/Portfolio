@@ -1509,6 +1509,19 @@ img.mfp-img {
   .ib-case-study__section {
     margin-bottom: 56px;
   }
+
+  .ib-case-study__next-label {
+    margin-bottom: 16px;
+  }
+
+  .ib-case-study__next-title {
+    line-height: 1.45;
+    align-items: flex-start;
+  }
+
+  .ib-case-study__next-arrow {
+    margin-top: 0.1em;
+  }
 }
 
 @media (min-width: 1024px) {
