@@ -1,7 +1,7 @@
 ---
 #preview - shown on homepage grid
 caseStudy: true
-id: "Project-3"
+id: "project-3"
 slug: "finto-digital-banking"
 title: "Finto - Digital Banking"
 tagline: "A product design concept for a mobile-first digital banking experience focused on clarity, trust, and everyday money management."
@@ -10,7 +10,7 @@ image: /img/portfolio/fintoShowcase.gif
 coverImage: /img/portfolio/finto-hero.png
 category: Product Design Concept
 category_slug: ui-ux-case-study
-link: "/projects/Project-3"
+link: "/projects/project-3"
 liveUrl: "https://www.behance.net/gallery/144319179/Finto-Digital-Banking-Platform"
 liveUrlLabel: "View on Behance"
 content: "UX concept redesign for a digital banking experience focused on clarity and everyday account management."

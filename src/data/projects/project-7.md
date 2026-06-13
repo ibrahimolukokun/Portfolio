@@ -1,7 +1,7 @@
 ---
 #preview - shown on homepage grid
 caseStudy: true
-id: "Project-7"
+id: "project-7"
 slug: "ruth-miskin-assessment-portal"
 title: "Ruth Miskin Training - Online Assessment Portal"
 tagline: "Redesigning a national ed-tech assessment platform used by 60% of UK schools, for learners, teachers, and assessors."
@@ -10,7 +10,7 @@ image: /img/portfolio/apr-showcase.gif
 coverImage: /img/portfolio/apr-kids-result.png
 category: Shipped Product
 category_slug: shipped-product
-link: "/projects/Project-7"
+link: "/projects/project-7"
 liveUrl: "https://www.ruthmiskin.com/"
 content: "UX redesign of a national assessment portal used by 60% of UK schools. Full flow for learners, teachers, and assessors."
 skills: ["Product Design", "UX Research", "Wireframing", "Prototyping", "Figma"]

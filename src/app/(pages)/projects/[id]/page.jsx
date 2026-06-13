@@ -6,7 +6,7 @@ import CaseStudyPage from "@components/case-study/CaseStudyPage";
 
 import { getSortedProjectsData, getAllProjectsIds, getProjectData } from "@library/projects";
 
-const PORTFOLIO_ORDER = ["Project-1", "Project-7", "Project-3", "Project-2"];
+const PORTFOLIO_ORDER = ["project-1", "project-7", "project-3", "project-2"];
 
 export async function generateMetadata({ params }) {
   const postData = await getSingleProjectData(await params);

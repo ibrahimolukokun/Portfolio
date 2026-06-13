@@ -40,7 +40,7 @@ async function Home() {
       <Suspense fallback={<div style={{ padding: '96px 0', textAlign: 'center', color: 'var(--text-muted)' }}>Loading projects…</div>}>
         <PortfolioSection
           projects={projects}
-          order={["Project-1", "Project-7", "Project-3", "Project-2"]}
+          order={["project-1", "project-7", "project-3", "project-2"]}
         />
       </Suspense>
 

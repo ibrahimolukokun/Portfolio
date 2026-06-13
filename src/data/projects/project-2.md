@@ -1,7 +1,7 @@
 ---
 #preview - shown on homepage grid
 caseStudy: true
-id: "Project-2"
+id: "project-2"
 slug: "zafunda-learning-platform"
 title: "Zafunda - Learning Platform"
 tagline: "A product design concept for a playful, age-banded e-learning platform that helps children aged 3 to 12 learn at their own pace."
@@ -10,7 +10,7 @@ image: /img/portfolio/zafunda.gif
 coverImage: /img/portfolio/zafunda-hero.png
 category: Product Design Concept
 category_slug: ui-ux-case-study
-link: "/projects/Project-2"
+link: "/projects/project-2"
 liveUrl: "https://www.behance.net/gallery/148527331/Zafunda-Learning-Platform-UI-Design-Web-Design"
 liveUrlLabel: "View on Behance"
 content: "Product design concept for a self-paced e-learning platform, from user flows through hi-fi UI."

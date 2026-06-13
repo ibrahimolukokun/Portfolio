@@ -1,7 +1,7 @@
 ---
 #preview - shown on homepage grid
 caseStudy: true
-id: "Project-1"
+id: "project-1"
 slug: "targe"
 title: "Targe - The Modern Workspace"
 tagline: "A focused project management SaaS for makers, founders, and product teams, designed and built end-to-end."
