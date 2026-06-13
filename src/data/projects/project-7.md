@@ -157,8 +157,4 @@ gallery:
     alt: "Ruth Miskin school portal sign in page"
     caption: "School portal sign-in: refreshed entry point with Microsoft SSO support."
 
-  - image: /img/portfolio/apr-showcase.gif
-    alt: "Ruth Miskin assessment portal animated UI showcase"
-    caption: "Full flow overview: sign-in, classes, assessment, and pupil results in context."
-
 ---
