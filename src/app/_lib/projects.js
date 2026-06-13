@@ -9,7 +9,7 @@ const projectsDirectory = path.join(process.cwd(), 'src/data/projects')
 export function getSortedProjectsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(projectsDirectory)
-  const allData = fileNames.filter((fileName) => fileName.includes('.md')).map(fileName => {
+  const allData = fileNames.filter((fileName) => fileName.includes('.md') && !fileName.includes('project-template')).map(fileName => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
@@ -41,7 +41,7 @@ export function getRelatedProjects(current_id) {
   const fileNames = fs.readdirSync(projectsDirectory)
   const allData = [];
 
-  fileNames.filter((fileName) => fileName.includes('.md')).map(fileName => {
+  fileNames.filter((fileName) => fileName.includes('.md') && !fileName.includes('project-template')).map(fileName => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
@@ -76,7 +76,7 @@ export function getRelatedProjects(current_id) {
 export function getAllProjectsIds() {
   const fileNames = fs.readdirSync(projectsDirectory)
 
-  return fileNames.filter((fileName) => fileName.includes('.md')).map(fileName => {
+  return fileNames.filter((fileName) => fileName.includes('.md') && !fileName.includes('project-template')).map(fileName => {
     return {
       params: {
         id: fileName.replace(/\.md$/, '')

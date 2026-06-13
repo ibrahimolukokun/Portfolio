@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { FaBehance, FaGithub } from 'react-icons/fa';
 
@@ -13,7 +14,7 @@ const PortfolioSection = ({ projects, order }) => {
       {/* Section header */}
       <div className="ib-container ib-work__header">
         <span className="ib-section__label">Selected Work</span>
-        <h2 className="ib-section__title" style={{ marginBottom: 0 }}>Projects</h2>
+        <h2 className="ib-section__title" style={{ marginBottom: 0 }}>Case studies</h2>
       </div>
 
       {/* Grid — full bleed */}
@@ -22,12 +23,19 @@ const PortfolioSection = ({ projects, order }) => {
           const project = projectsKeys[id];
           if (!project || !project.image) return null;
 
+          const CardWrapper = project.caseStudy ? Link : "a";
+          const cardProps = project.caseStudy
+            ? { href: `/projects/${project.id}` }
+            : {
+                href: project.link,
+                target: "_blank",
+                rel: "noopener noreferrer",
+              };
+
           return (
-            <a
+            <CardWrapper
               key={index}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...cardProps}
               className="ib-work__item"
               aria-label={`View ${project.title}`}
             >
@@ -52,7 +60,7 @@ const PortfolioSection = ({ projects, order }) => {
                   ))}
                 </div>
               </div>
-            </a>
+            </CardWrapper>
           );
         })}
       </div>
