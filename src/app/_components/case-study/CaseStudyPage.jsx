@@ -13,7 +13,7 @@ const CaseStudyInlineMedia = ({ media, title }) => {
           src={media.image}
           alt={media.alt || media.caption || title}
           fill
-          quality={92}
+          quality={80}
           sizes="(max-width: 900px) 100vw, min(1200px, 100vw)"
           className="ib-case-study__inline-media-img"
           unoptimized={media.image.endsWith(".gif")}
@@ -116,7 +116,7 @@ const CaseStudyPage = ({ project, nextProject }) => {
                   alt={title}
                   fill
                   priority
-                  quality={92}
+                  quality={80}
                   sizes="(max-width: 900px) 100vw, min(1200px, 100vw)"
                   className="ib-case-study__cover-img"
                   unoptimized={(coverImage || image).endsWith(".gif")}

@@ -962,7 +962,9 @@ img.mfp-img {
   aspect-ratio: 16 / 10;
 }
 
-.ib-case-study__cover-img {
+.ib-case-study__cover-img,
+.ib-case-study__inline-media-img,
+.ib-case-study__gallery-img {
   object-fit: cover;
   object-position: top center;
 }

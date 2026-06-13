@@ -64,7 +64,7 @@ const CaseStudyGallery = ({ gallery = [], title = "" }) => {
                       src={item.image}
                       alt={item.alt || item.caption || title}
                       fill
-                      quality={92}
+                      quality={80}
                       sizes="(max-width: 900px) 100vw, 50vw"
                       className="ib-case-study__gallery-img"
                       unoptimized={item.image?.endsWith(".gif")}

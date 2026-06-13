@@ -4,27 +4,27 @@ caseStudy: true
 id: "project-1"
 slug: "targe"
 title: "Targe - The Modern Workspace"
-tagline: "A focused project management SaaS for makers, founders, and product teams, designed and built end-to-end."
-summary: "I identified a gap in how small teams manage work, designed the product experience from research through hi-fi prototypes, and shipped the frontend as a live SaaS platform now in public beta."
+tagline: "A focused project management SaaS for makers, founders, and product teams, designed and built with my developer co-founder."
+summary: "As co-founder and product designer, I led the product experience from research through hi-fi UI and built the frontend in React, working alongside my developer co-founder who led backend engineering. Now live in public beta at targe.app."
 image: /img/portfolio/targecasestudy1.gif
 coverImage: /img/portfolio/targe-dashboard-overview.png
 category: Shipped Product
 category_slug: shipped-product
 link: "https://targe.app/"
 liveUrl: "https://targe.app/"
-content: "Project management SaaS for founders and product teams. I led product design and built the frontend, live at targe.app."
+content: "Project management SaaS for founders and product teams. I co-founded Targe, led product design, and built the frontend alongside my developer co-founder."
 skills: ["Product Design", "UX Strategy", "React.js", "TailwindCSS", "Design Engineering"]
 masonrySize: horizontal
 
 caseStudyMeta:
   - label: "Role"
-    value: "Founder · Product Designer · Frontend Engineer"
+    value: "Co-founder · Product Designer · Design Engineer"
   - label: "Timeline"
     value: "2024 – Present"
   - label: "Platform"
     value: "Web SaaS"
   - label: "Team"
-    value: "Solo founder (design + frontend)"
+    value: "2 co-founders (product design + engineering)"
   - label: "Status"
     value: "Live, public beta"
 
@@ -36,7 +36,7 @@ impact:
   - value: "< 2 hrs"
     label: "Average onboarding time"
   - value: "0 → 1"
-    label: "Product shipped solo"
+    label: "Product shipped as a team"
 
 sections:
   - id: problem
@@ -45,7 +45,7 @@ sections:
     content: |
       <p>Most project management platforms weren't built for the people actually doing the work. They're designed for enterprise rollouts with heavy setup, bloated feature sets, and interfaces that pull attention away from shipping.</p>
       <p>I kept seeing the same pattern with founders, freelancers, and small product teams: they'd adopt a tool, spend days configuring it, then revert to spreadsheets or scattered notes because the overhead wasn't worth it. The tool became another job.</p>
-      <p>Targe started from a simple question: <em>what if a workspace helped you focus on delivery instead of managing the manager?</em></p>
+      <p>We co-founded Targe to answer a simple question: <em>what if a workspace helped you focus on delivery instead of managing the manager?</em></p>
     highlights:
       - "High setup overhead before any real work begins"
       - "Cluttered UIs that bury tasks under navigation and chrome"
@@ -54,19 +54,19 @@ sections:
 
   - id: role
     label: "My Role"
-    title: "Designing and building the product, not just the screens"
+    title: "Co-founding Targe and leading product design"
     content: |
-      <p>As founder, I owned the full product loop: problem framing, UX strategy, visual design, prototyping, frontend architecture, and iteration based on early user feedback. There was no handoff between design and engineering. Decisions were made with implementation constraints in mind from day one.</p>
-      <p>This design-engineer workflow let me move fast: test an interaction in Figma, validate the flow, then ship it in React without losing intent in translation.</p>
+      <p>I co-founded Targe with a developer co-founder. I led product design end to end: problem framing, UX strategy, visual design, prototyping, and frontend implementation. My co-founder led backend engineering and technical architecture.</p>
+      <p>We worked as a tight two-person founding team with short feedback loops between design and engineering. I could test an interaction in Figma, validate the flow, then ship it in React while my co-founder built the systems behind it.</p>
     details:
-      - label: "Product & UX"
+      - label: "Product & UX (my focus)"
         value: "Problem discovery, user flows, IA, wireframes, hi-fi UI, prototyping"
-      - label: "Frontend"
+      - label: "Frontend (my focus)"
         value: "React, TailwindCSS, responsive layouts, component structure"
-      - label: "Positioning"
-        value: "Brand, messaging, landing page, early access funnel"
-      - label: "Iteration"
-        value: "Beta feedback loops, onboarding refinements, feature prioritisation"
+      - label: "Engineering (co-founder)"
+        value: "Backend architecture, APIs, infrastructure, technical delivery"
+      - label: "Shared"
+        value: "Positioning, beta feedback loops, onboarding refinements, feature prioritisation"
 
   - id: users
     label: "Who It's For"
@@ -102,7 +102,7 @@ sections:
 
   - id: decisions
     label: "Key Decisions"
-    title: "What I built, and deliberately left out"
+    title: "What we built, and deliberately left out"
     decisions:
       - title: "No enterprise setup tax"
         description: "Users can create a workspace and add tasks in their first session. I removed mandatory configuration steps that plague traditional PM tools."
@@ -112,10 +112,10 @@ sections:
         rationale: "Founders and small teams told me they wanted a tool that works immediately, not one they need to hire someone to configure."
       - title: "Design system baked into code"
         description: "Visual patterns, spacing, and components were defined once and implemented directly in the frontend, with no separate design-dev translation layer."
-        rationale: "As a solo builder, consistency had to be automatic. A shared component approach kept the UI cohesive as the product grew."
+        rationale: "As a small founding team, consistency had to be automatic. A shared component approach kept the UI cohesive as the product grew."
       - title: "Beta-first launch"
         description: "Shipped early access with a focused landing page and waitlist rather than waiting for a feature-complete v1."
-        rationale: "Real usage data and sign-up momentum matter more than a perfect feature matrix. Beta let me validate positioning before backend scale-up."
+        rationale: "Real usage data and sign-up momentum matter more than a perfect feature matrix. Beta let us validate positioning before scaling backend infrastructure."
     media:
       image: /img/portfolio/targe-kanban-board.png
       alt: "Targe Kanban board view with To-Do, In Progress, In Review, and Done columns"
@@ -125,7 +125,7 @@ sections:
     label: "Design Engineering"
     title: "From Figma flows to production UI"
     content: |
-      <p>Targe is where my product design and frontend skills converge. I designed the interaction model and visual language in Figma, then implemented the desktop experience in React with TailwindCSS, maintaining fidelity while making pragmatic cuts when a pattern was too expensive to build solo.</p>
+      <p>Targe is where my product design and frontend skills converge. I designed the interaction model and visual language in Figma, then implemented the desktop experience in React with TailwindCSS. My co-founder built the backend that powers workspaces, tasks, and collaboration behind the scenes.</p>
       <p>Key surfaces include the marketing site, early-access funnel, workspace setup, cross-project task management, sprint progress views, and collaboration touchpoints. Each was designed as a reusable component, not a one-off screen.</p>
     highlights:
       - "Responsive marketing site with clear conversion path to early access"
@@ -139,7 +139,7 @@ sections:
     content: |
       <p>Targe is live at <a href="https://targe.app/" target="_blank" rel="noopener noreferrer">targe.app</a> and accepting early access applications. The product has moved from concept to a functioning beta with real users managing real work.</p>
       <p>Early signals validate the core thesis: teams want a calmer, faster alternative to bloated project tools. Onboarding stays under two hours on average, and beta users have already managed 10,000+ tasks on the platform.</p>
-      <p><strong>What's next:</strong> completing remaining frontend flows, backend integration, and a closed beta before MVP 1 launch. The design foundation and frontend architecture are in place. The focus now is hardening flows and preparing for scale.</p>
+      <p><strong>What's next:</strong> completing remaining frontend flows, deepening backend integration, and moving toward a closed beta before MVP 1 launch. The design foundation and frontend architecture are in place. The focus now is hardening flows and preparing for scale as a team.</p>
 
 gallery:
   - image: /img/portfolio/targe-dashboard-overview.png

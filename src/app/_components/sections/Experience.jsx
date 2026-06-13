@@ -28,7 +28,7 @@ const ExperienceSection = () => {
                 I'm a <strong>Product Designer and Design Engineer</strong> with 8+ years of experience building digital products that ship: SaaS platforms, enterprise dashboards, and scalable interfaces for startups and established teams.
               </p>
               <p>
-                Recent work includes redesigning Ruth Miskin Training's Online Assessment Portal, used by around 60% of UK schools, and building <strong>Targe</strong>, a live project management SaaS I designed and developed from scratch.
+                Recent work includes redesigning Ruth Miskin Training's Online Assessment Portal, used by around 60% of UK schools, and co-founding <strong>Targe</strong>, a live project management SaaS where I lead product design and frontend development alongside my developer co-founder.
               </p>
               <p>
                 At <strong>Contrivea</strong>, I lead product design for clients in fintech, ed-tech, and B2B SaaS. I work at the intersection of design thinking and engineering. I don't just design what's beautiful, I design what ships and performs.
