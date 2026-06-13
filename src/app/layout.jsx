@@ -25,7 +25,7 @@ export const metadata = {
     default: "Ibrahim Olukokun — Product Designer | Design Engineer",
     template: "%s | Ibrahim Olukokun",
   },
-  description: "Product Designer | Design Engineer. I design SaaS platforms, dashboards, and digital systems for growing companies — then help build them.",
+  description: "Product Designer and Design Engineer with 8+ years of experience. I design SaaS platforms, dashboards, and digital systems for growing companies, then help build them.",
 }
 
 const Layouts = ({

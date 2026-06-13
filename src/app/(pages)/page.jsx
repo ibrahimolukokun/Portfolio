@@ -69,7 +69,7 @@ async function Home() {
 
           <div className="ib-contact__inner">
             <p className="ib-contact__sub">
-              Whether you're a startup defining your product experience, or a growing company that needs a design partner who understands engineering, I'd love to hear from you.
+              Whether you're a startup defining your product from zero to one, or a growing company that needs a design partner who understands engineering and ships real products, I'd love to hear from you.
             </p>
 
             <a href="mailto:iolukokun@gmail.com" className="ib-contact__email">
