@@ -6,6 +6,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 import Link from "next/link";
 import Image from 'next/image';
+import { getProjectThumbnail } from "@library/projects";
 
 const ProjectsMasonry = ({ projects, categories, layout = 'grid', limit = 6, filter = 1, columns = 2, container = 'boxed' }) => {
     // Filters & Infinite Loading
@@ -127,7 +128,7 @@ const ProjectsMasonry = ({ projects, categories, layout = 'grid', limit = 6, fil
                         <Link href={`/projects/${item.id}`} className="mil-project-card mil-mb30 mil-up mil-c-view">
                             <div className={layout == 'masonry' ? `mil-cover-frame mil-${item.masonrySize == 'horizontal' ? "h" : `${item.masonrySize == 'vertical' ? "v" : "s"}` }` : "mil-cover-frame mil-s"}>
                                 <div className="mil-hover-frame">
-                                    <Image src={item.image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={item.title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
+                                    <Image src={getProjectThumbnail(item)} fill sizes="(max-width: 768px) 100vw, 50vw" alt={item.title} className="mil-scale-img" data-value-1="1" data-value-2="1.25" />
                                 </div>
                                 <div className="mil-hover-overlay"></div>
                             </div>

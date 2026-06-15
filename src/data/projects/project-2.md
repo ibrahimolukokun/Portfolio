@@ -6,7 +6,7 @@ slug: "zafunda-learning-platform"
 title: "Zafunda - Learning Platform"
 tagline: "A product design concept for a playful, age-banded e-learning platform that helps children aged 3 to 12 learn at their own pace."
 summary: "An ed-tech UX exploration: designing a cross-platform learning experience from parent-facing marketing through mobile onboarding, age-appropriate activity hubs, and gamified lesson rewards."
-image: /img/portfolio/zafunda.gif
+image: /img/portfolio/zafunda-hero.png
 coverImage: /img/portfolio/zafunda-hero.png
 category: Product Design Concept
 category_slug: ui-ux-case-study
@@ -149,8 +149,8 @@ gallery:
     alt: "Zafunda learner dashboard with progress stats and continue activities"
     caption: "Learner dashboard: progress overview, continue activities, and upcoming assignments."
 
-  - image: /img/portfolio/zafunda.gif
-    alt: "Zafunda learning platform animated UI showcase"
+  - image: /img/portfolio/zafunda-homepage.png
+    alt: "Zafunda learning platform homepage and key UI surfaces"
     caption: "Full concept overview: web and mobile surfaces in context."
 
 ---

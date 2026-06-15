@@ -3,10 +3,10 @@
     "experiences": [
       {
         "id": "01",
-        "role": "Co-founder · Product Designer & Design Engineer",
-        "period": "2024 – Present",
-        "company": "Targe",
-        "website": "targe.app"
+        "role": "Lead Product Designer",
+        "period": "Sep 2022 – Present",
+        "company": "US Cloud Consulting",
+        "website": "uscloudconsulting.com"
       },
       {
         "id": "02",
@@ -17,29 +17,15 @@
       },
       {
         "id": "03",
-        "role": "Co-Founder & Product Designer",
-        "period": "2024 – Present",
-        "company": "Mentosure",
-        "website": "mentosure.com"
-      },
-      {
-        "id": "04",
-        "role": "Independent Product & Design Consultant",
-        "period": "2021 – Present",
-        "company": "Upwork (Top Rated Plus · Top 3% Globally)",
+        "role": "Independent Product & Design Consultant (Top Rated Plus · Top 3% Globally)",
+        "period": "Jul 2021 – Present",
+        "company": "Upwork",
         "website": "upwork.com"
       },
       {
-        "id": "05",
-        "role": "Creative Lead · Product Designer",
-        "period": "2018 – Present",
-        "company": "Contrivea",
-        "website": "contrivea.com"
-      },
-      {
-        "id": "06",
-        "role": "Founder & Community Lead",
-        "period": "2025 – Present",
+        "id": "04",
+        "role": "Community Lead",
+        "period": "Jun 2025 – Present",
         "company": "Tech Growth Circle",
         "website": "#"
       }

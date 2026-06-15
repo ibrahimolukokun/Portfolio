@@ -19,8 +19,8 @@ const PortfolioSection = dynamic(
 );
 
 export const metadata = {
-  title: "Ibrahim Olukokun — Product Designer | Design Engineer",
-  description: "Product Designer and Design Engineer with 8+ years turning ideas into products that are beautifully designed and easy to use. From SaaS platforms and dashboards to design systems and no-code tools.",
+  title: "Ibrahim Olukokun - Product Designer | Design Engineer",
+  description: "Senior Product Designer and Design Engineer with 8+ years shipping SaaS, enterprise, and ed-tech products. Lead designer at US Cloud Consulting.",
 };
 
 async function Home() {
@@ -69,7 +69,7 @@ async function Home() {
 
           <div className="ib-contact__inner">
             <p className="ib-contact__sub">
-              Whether you're a startup defining your product from zero to one, or a growing company that needs a design partner who understands engineering and ships real products, I'd love to hear from you.
+              Whether you're scaling a product team or building something new, I'd love to hear from you.
             </p>
 
             <a href="mailto:iolukokun@gmail.com" className="ib-contact__email">

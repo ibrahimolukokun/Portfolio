@@ -6,7 +6,7 @@ slug: "ruth-miskin-assessment-portal"
 title: "Ruth Miskin Training - Online Assessment Portal"
 tagline: "Redesigning a national ed-tech assessment platform used by 60% of UK schools, for learners, teachers, and assessors."
 summary: "As Product Designer, I led the UX redesign of Ruth Miskin Training's Online Assessment Portal, modernising complex assessment workflows for schools nationwide while collaborating closely with engineering and product management."
-image: /img/portfolio/apr-showcase.gif
+image: /img/portfolio/RuthMiskin_Cover.png
 coverImage: /img/portfolio/apr-kids-result.png
 category: Shipped Product
 category_slug: shipped-product

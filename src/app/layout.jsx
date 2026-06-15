@@ -22,10 +22,10 @@ import AppData from "@data/app.json";
 
 export const metadata = {
   title: {
-    default: "Ibrahim Olukokun — Product Designer | Design Engineer",
+    default: "Ibrahim Olukokun - Product Designer | Design Engineer",
     template: "%s | Ibrahim Olukokun",
   },
-  description: "Product Designer and Design Engineer with 8+ years of experience. I design SaaS platforms, dashboards, and digital systems for growing companies, then help build them.",
+  description: AppData.settings.siteDescription,
 }
 
 const Layouts = ({

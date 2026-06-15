@@ -6,7 +6,7 @@ slug: "finto-digital-banking"
 title: "Finto - Digital Banking"
 tagline: "A product design concept for a mobile-first digital banking experience focused on clarity, trust, and everyday money management."
 summary: "An exploration in fintech UX: designing a digital banking concept from brand and marketing surfaces through mobile wallet, currency tools, and identity verification flows."
-image: /img/portfolio/fintoShowcase.gif
+image: /img/portfolio/finto-hero.png
 coverImage: /img/portfolio/finto-hero.png
 category: Product Design Concept
 category_slug: ui-ux-case-study
@@ -149,8 +149,8 @@ gallery:
     alt: "Finto debit card designs with gradient brand colours"
     caption: "Card system: debit card explorations extending the Finto brand."
 
-  - image: /img/portfolio/fintoShowcase.gif
-    alt: "Finto mobile app screens animated showcase"
+  - image: /img/portfolio/finto-mobile-screens.png
+    alt: "Finto mobile app screens composition"
     caption: "App overview: wallet, currency tools, and identity verification in context."
 
 ---

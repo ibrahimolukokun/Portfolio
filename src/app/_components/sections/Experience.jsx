@@ -25,19 +25,16 @@ const ExperienceSection = () => {
           <div>
             <div className="ib-about__bio">
               <p>
-                I'm a <strong>Product Designer and Design Engineer</strong> with 8+ years of experience building digital products that ship: SaaS platforms, enterprise dashboards, and scalable interfaces for startups and established teams.
+                I'm a <strong>Product Designer and Design Engineer</strong> with 8+ years of experience designing and shipping digital products across SaaS, enterprise, and ed-tech, from research and prototyping through to production-ready interfaces.
               </p>
               <p>
-                Recent work includes redesigning Ruth Miskin Training's Online Assessment Portal, used by around 60% of UK schools, and co-founding <strong>Targe</strong>, a live project management SaaS where I lead product design and frontend development alongside my developer co-founder.
+                I'm lead product designer for <strong>US Cloud Consulting</strong>, working across their SaaS brands including Compelify and Opscalers, as well as enterprise clients in fintech and energy. Highlights include the investor deck that supported Analog Inference's $50.5M Series A and product work for clients such as AM Batteries and TDK Ventures.
               </p>
               <p>
-                At <strong>Contrivea</strong>, I lead product design for clients in fintech, ed-tech, and B2B SaaS. I work at the intersection of design thinking and engineering. I don't just design what's beautiful, I design what ships and performs.
+                I spent three months as product designer at <strong>Ruth Miskin Training</strong>, redesigning their Online Assessment Portal used by around 60% of UK schools and doubling completion rates. I'm also recognised as Top Rated Plus on <strong>Upwork</strong>, top 3% globally, with a 100% job success score across five years of independent consulting.
               </p>
               <p>
-                On <strong>Upwork</strong>, I'm recognised as Top Rated Plus, in the top 3% of professionals globally, with a 100% job success score across 4+ years of independent consulting for startups, scale-ups, and digital platforms across North America, Europe, and Asia.
-              </p>
-              <p>
-                I'm also co-founder of <strong>Mentosure</strong>, an ed-tech platform for career transitions (currently in development), and lead <strong>Tech Growth Circle</strong>, a learning community of 30+ designers and developers building their way into tech.
+                Outside client work, I'm building <strong>Targe</strong>, a project management SaaS with a co-founder, and mentoring designers through <strong>Tech Growth Circle</strong>, a learning community of 30+ people transitioning into product and design roles.
               </p>
             </div>
           </div>

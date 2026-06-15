@@ -16,9 +16,9 @@ const HeroOne = ({ image }) => {
             </h1>
 
             <p className="ib-hero__sub">
-              Product designer with 8+ years of hands-on experience turning ideas into products
-              that are beautifully designed and genuinely easy to use. From SaaS platforms and
-              dashboards to design systems and no-code tools.
+              Senior product designer with 8+ years designing and shipping SaaS platforms,
+              enterprise dashboards, and ed-tech products, currently lead designer at US Cloud
+              Consulting.
             </p>
 
             <div className="ib-hero__ctas">
@@ -33,10 +33,6 @@ const HeroOne = ({ image }) => {
               </a>
             </div>
 
-            <div className="ib-hero__availability">
-              <span className="ib-hero__dot" />
-              Available for select projects
-            </div>
           </div>
 
           {/* Right: Photo */}

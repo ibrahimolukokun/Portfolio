@@ -6,7 +6,7 @@ slug: "targe"
 title: "Targe - The Modern Workspace"
 tagline: "A focused project management SaaS for makers, founders, and product teams, designed and built with my developer co-founder."
 summary: "As co-founder and product designer, I led the product experience from research through hi-fi UI and built the frontend in React, working alongside my developer co-founder who led backend engineering. Now live in public beta at targe.app."
-image: /img/portfolio/targecasestudy1.gif
+image: /img/portfolio/Targe_Cover.png
 coverImage: /img/portfolio/targe-dashboard-overview.png
 category: Shipped Product
 category_slug: shipped-product

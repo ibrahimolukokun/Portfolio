@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { FaBehance, FaGithub } from 'react-icons/fa';
+import { getProjectGridImage } from "@library/projects";
 
 const PortfolioSection = ({ projects, order }) => {
   let projectsKeys = {};
@@ -21,7 +22,8 @@ const PortfolioSection = ({ projects, order }) => {
       <div className="ib-work__grid">
         {order.map((id, index) => {
           const project = projectsKeys[id];
-          if (!project || !project.image) return null;
+          const thumbnail = project ? getProjectGridImage(project) : null;
+          if (!project || !thumbnail) return null;
 
           const CardWrapper = project.caseStudy ? Link : "a";
           const cardProps = project.caseStudy
@@ -41,7 +43,7 @@ const PortfolioSection = ({ projects, order }) => {
             >
               <div className="ib-work__img-wrap">
                 <img
-                  src={project.image}
+                  src={thumbnail}
                   alt={project.title}
                   className="ib-work__img"
                   loading={index < 2 ? 'eager' : 'lazy'}
