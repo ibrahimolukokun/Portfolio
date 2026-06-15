@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { FaBehance, FaGithub } from 'react-icons/fa';
-import { getProjectGridImage } from "@library/projects";
+import { getProjectGridImage } from "@library/project-images";
 
 const PortfolioSection = ({ projects, order }) => {
   let projectsKeys = {};

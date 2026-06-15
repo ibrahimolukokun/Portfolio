@@ -6,7 +6,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 import Link from "next/link";
 import Image from 'next/image';
-import { getProjectThumbnail } from "@library/projects";
+import { getProjectThumbnail } from "@library/project-images";
 
 const ProjectsMasonry = ({ projects, categories, layout = 'grid', limit = 6, filter = 1, columns = 2, container = 'boxed' }) => {
     // Filters & Infinite Loading

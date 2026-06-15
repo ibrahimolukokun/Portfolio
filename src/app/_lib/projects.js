@@ -6,14 +6,6 @@ import html from 'remark-html'
 
 const projectsDirectory = path.join(process.cwd(), 'src/data/projects')
 
-export function getProjectThumbnail(project) {
-  return project?.coverImage || project?.image;
-}
-
-export function getProjectGridImage(project) {
-  return project?.gridImage || project?.image || project?.coverImage;
-}
-
 export function getSortedProjectsData() {
   const fileNames = fs.readdirSync(projectsDirectory)
   const allData = fileNames.filter((fileName) => fileName.includes('.md') && !fileName.includes('project-template')).map(fileName => {
