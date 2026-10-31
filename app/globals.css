@@ -238,7 +238,7 @@
 @media(max-width:700px){#ventures,#writing,#about,#community{margin-top:48px;padding-top:30px}.preview-bar{gap:10px;flex-wrap:wrap}.preview-actions{flex-wrap:wrap}.portrait{max-width:100%}#community>h2 br{display:none}.community-row-action{position:relative}.community-row-action:after{content:'';position:absolute;inset:-7px}}
 @media(max-width:360px){.hero-stage{height:622px}.portrait{top:158px}.hero h1{font-size:24px}.mobile-header-actions{gap:4px}.mobile-contact{padding-left:12px;padding-right:12px}.hero-bottom{padding-top:24px}}
 
-@media(max-width:700px){.menu-toggle{order:0;gap:4px}.mobile-contact{order:1}.menu-toggle span{width:17px}.menu-toggle[aria-expanded=true] span:nth-child(1){transform:translateY(5px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0;transform:none}.menu-toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}}
+@media(max-width:700px){.menu-toggle{order:1;gap:4px}.mobile-contact{order:0}.menu-toggle span{width:17px}.menu-toggle[aria-expanded=true] span:nth-child(1){transform:translateY(5px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0;transform:none}.menu-toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}}
 
 .about-personal-intro{display:grid;grid-template-columns:1fr 2fr;gap:64px}
 #about .about-personal-intro h2{margin:0}
