@@ -1,14 +1,2 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: false,
-  sassOptions: {
-    silenceDeprecations: ["legacy-js-api"],
-  },
-  images: {
-    formats: ["image/avif", "image/webp"],
-    deviceSizes: [640, 828, 1080, 1200, 1920, 2400],
-    imageSizes: [256, 384, 640, 750, 828, 1080, 1200],
-  },
-}
-
-module.exports = nextConfig
+module.exports={outputFileTracingRoot:__dirname,reactStrictMode:true,async redirects(){return [{source:'/projects',destination:'/#work',permanent:true},{source:'/about',destination:'/#about',permanent:true},{source:'/contact',destination:'/#contact',permanent:true},{source:'/blog',destination:'/#writing',permanent:true},{source:'/projects/project-2',destination:'/#work',permanent:true},{source:'/projects/project-4',destination:'/#work',permanent:true},{source:'/projects/project-5',destination:'/#work',permanent:true},{source:'/projects/project-6',destination:'/#work',permanent:true}]},async headers(){return [{source:'/:path*',headers:[{key:'X-Content-Type-Options',value:'nosniff'},{key:'Referrer-Policy',value:'strict-origin-when-cross-origin'},{key:'X-Frame-Options',value:'SAMEORIGIN'}]}]}}

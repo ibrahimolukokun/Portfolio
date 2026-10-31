@@ -1,0 +1,1 @@
+export default function sitemap(){return ['', '/projects/project-7','/projects/project-1','/projects/project-3'].map(path=>({url:`https://www.ibrahimolukokun.com${path}`,changeFrequency:path?'monthly':'weekly',priority:path?0.8:1}))}

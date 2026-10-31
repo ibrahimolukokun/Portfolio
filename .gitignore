@@ -4,3 +4,8 @@ node_modules/
 .DS_Store
 .env
 .vercel
+
+# Local review records
+/review/
+/LAUNCH.txt
+/CASE-STUDY-REVIEW.txt

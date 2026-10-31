@@ -1,0 +1,193 @@
+{
+  "project-7": {
+    "slug": "ruth-miskin-assessment-portal",
+    "name": "Ruth Miskin Training",
+    "title": "Clearer assessment workflows.",
+    "intro": "Redesigning a reading-assessment portal around two different kinds of attention: helping teachers see what needs doing across a class, and helping assessors focus on one pupil at a time.",
+    "role": "Product Designer",
+    "timeline": "July–October 2024",
+    "scope": "UX, interaction design & interface design",
+    "team": "Product management & engineering",
+    "cover": "apr-kids-result.webp",
+    "coverAlt": "Pupil assessment results and contextual information",
+    "context": "A reading assessment is part of a larger school workflow. Before a session, staff need to find the right class and pupil. During it, the assessor needs to concentrate on the assessment itself. Afterwards, the result needs to make sense alongside the pupil’s wider context. Treating these as one undifferentiated interface would give every screen too many competing priorities.",
+    "contribution": "I owned the product-design work across user flows, wireframes and low- and high-fidelity prototypes, working with product management and engineering. The scope connected class and pupil management, the live assessment, results review and profile editing. I also worked on parts of the company website, but this case focuses on the assessment experience.",
+    "decisions": [
+      {
+        "title": "Make assessment status a way into the work.",
+        "body": "A class list has to do more than hold pupil records. It needs to help staff decide where to start. I organised the view around assessment states—Not Assessed, In Progress and Completed—while keeping the pupil table as the main working surface. This gives the same class a stable home, with different routes into the pupils who need attention.",
+        "image": "apr-class-group-stage.webp",
+        "alt": "Class view with assessment status filters and pupil records",
+        "caption": "Class management — status filters organise a larger pupil list around the assessment task.",
+        "width": 2400,
+        "height": 2083,
+        "rationale": "The design intent was to reduce the amount of interpretation needed before taking action. Staff can choose an assessment state before examining individual records, rather than treating every pupil as an equally urgent item.",
+        "tradeoff": "Adding more summary panels could make the page look informative while pushing the pupil list down. The design gives status filters a compact position and preserves the list as the centre of the workflow.",
+        "detail": "Status filters, pupil records and class context stay together so filtering does not require a separate reporting screen."
+      },
+      {
+        "title": "Change the interface’s priorities when the assessment begins.",
+        "body": "Managing a class and conducting an assessment are different tasks. In the live assessment view, I brought progress, the current content and assessment controls into a focused layout. Broader management information takes a secondary role so the interface supports the session in progress.",
+        "image": "apr-main-assessment.webp",
+        "alt": "Live assessment interface with progress and assessment controls",
+        "caption": "Assessment — the content and session controls take priority over management information.",
+        "width": 2400,
+        "height": 1656,
+        "rationale": "The assessor’s attention is shared with the pupil. The design therefore gives the current step and its controls a clear visual relationship, with progress available without competing with the content.",
+        "tradeoff": "A focused view still needs orientation. Removing everything except the assessment content would make it harder to understand where the assessor is in the session. Progress and controls remain visible together.",
+        "detail": "The screen shows session progress and keyboard-control guidance alongside the assessment content."
+      },
+      {
+        "title": "Summarise the result without losing the pupil behind it.",
+        "body": "The result page needs to support a quick overview and a closer reading. I separated the outcome summary from more granular phonics information, while keeping class context, learning flags and storybook information close to the pupil record. Profile changes use a focused editing surface rather than making the whole results page editable.",
+        "image": "apr-kids-result.webp",
+        "alt": "Pupil result interface with outcome summary and phonics details",
+        "caption": "Results — the outcome summary leads into more detailed assessment information.",
+        "width": 2400,
+        "height": 2191,
+        "rationale": "An assessment outcome is more useful when the reader can interpret it in context. The hierarchy creates a route from “what happened?” into the detail, instead of asking every reader to begin with the full breakdown.",
+        "tradeoff": "Showing every detail at equal weight would flatten the hierarchy; hiding it all would make closer review difficult. The design retains the detail but gives the summary the first read.",
+        "detail": "The pupil summary, contextual flags and detailed results form distinct levels of information within one page."
+      }
+    ],
+    "collaboration": "The design work needed to be understandable beyond the final screen. I used the progression from wireframes to detailed prototypes to discuss hierarchy, navigation and feasibility with product management and engineering. Repeated patterns—tables, tabs, navigation and editing surfaces—provided a common language across the portal. The central delivery consideration was consistency: a pupil record should remain recognisable as someone moves from class management into an assessment and back to results.",
+    "delivery": "The design set brings class management, live assessment, pupil results and profile editing into a coherent experience. Its clearest contribution is the separation of responsibilities between those surfaces: an overview for organising work, a focused assessment environment and a result page with contextual detail. These examples demonstrate the design delivered during the engagement.",
+    "learning": "A consistent product does not mean every screen should behave like a dashboard. The useful distinction here was the kind of attention each task required. I would carry that forward by testing complete transitions between class management, assessment and results—not only the usability of each screen in isolation.",
+    "next": "project-1",
+    "coverWidth": 2400,
+    "coverHeight": 2191,
+    "problem": "The existing project brief called for a clearer, more consistent experience across class management, assessment and pupil records. My task was to modernise those workflows within an established product, rather than redesign the underlying assessment model. That distinction shaped the work: improve how people find, interpret and act on information while retaining a recognisable route through the portal.",
+    "approachTitle": "Start with the school task, then decide what the screen should prioritise.",
+    "approach": "I mapped the assessment journey from entry and class setup through a live session to results and profile updates. That gave the screens a shared structure without requiring them to share the same density. Class management needed comparison and scanning; the assessment needed a clear sequence; results needed a summary with access to detail. Wireframes and prototypes made those differences concrete for discussion with the product and engineering team.",
+    "principles": [
+      {
+        "title": "Across a class",
+        "body": "Identify the pupils and assessment states that need attention."
+      },
+      {
+        "title": "During a session",
+        "body": "Keep the current assessment content, progress and controls together."
+      },
+      {
+        "title": "After assessment",
+        "body": "Connect the result to the pupil’s context and the next review."
+      }
+    ],
+    "nextQuestions": "My engagement ran from July to October 2024. This case captures my contribution during that period: connecting class management, live assessment and pupil results through a consistent design approach, in collaboration with product management and engineering. The screens and decisions shown here reflect the work I delivered at the time.",
+    "nextQuestionsTitle": "Looking back on the engagement"
+  },
+  "project-1": {
+    "slug": "targe-workspace",
+    "name": "Targe",
+    "title": "A focused workspace for small teams.",
+    "intro": "Co-founding a workspace for makers and small teams, and connecting product direction, interaction design and React frontend implementation in a two-person founding team.",
+    "role": "Co-founder · Product design & frontend",
+    "timeline": "Independent venture",
+    "scope": "Product direction, UX/UI & React frontend",
+    "team": "Two co-founders",
+    "cover": "targe-dashboard-overview.webp",
+    "coverAlt": "Targe workspace dashboard interface",
+    "context": "Targe started with a product question: how can a workspace help a small team understand its work without making managing the tool another job? The intended audience included independent makers, founders running several initiatives and small product teams. Their common need was a clear connection between what needs doing, who owns it and how it is progressing.",
+    "contribution": "I co-founded Targe with a developer co-founder. I led product direction, UX, interaction and visual design, and worked on the React frontend using TailwindCSS. My co-founder led backend engineering and technical architecture. This gave me responsibility for both the design of the interface and how its patterns translated into frontend components.",
+    "decisions": [
+      {
+        "title": "Let the overview lead somewhere useful.",
+        "body": "The dashboard brings together task summaries, active projects and deadlines. The projects view then gives each initiative its own context, including progress and ownership. These are connected levels of the same workspace: the overview helps someone recognise where to look, and the project view helps them understand what is happening there.",
+        "image": "targe-projects-page.webp",
+        "alt": "Targe project grid with progress and ownership",
+        "caption": "Projects — progress, people and project context appear together.",
+        "width": 2400,
+        "height": 1706,
+        "rationale": "The purpose of an overview is to support the next action. Project context should make it easier to choose where to work, rather than require the user to assemble that context from separate reports.",
+        "tradeoff": "More summaries can create a richer dashboard while increasing the amount someone must scan. The key design question is which information helps select the next project or task. The current dashboard is a design proposition to validate against that question.",
+        "detail": "Project cards combine progress and team context, while the dashboard provides routes into active work."
+      },
+      {
+        "title": "Use a familiar board for shared task state.",
+        "body": "Within a project, the board groups tasks into To Do, In Progress, In Review and Done. Cards retain priority and ownership information. The interaction model relies on a familiar structure so the product does not ask teams to learn a new vocabulary simply to understand what is moving.",
+        "image": "targe-kanban-board.webp",
+        "alt": "Targe board showing task status columns",
+        "caption": "Board — the state of the work is explicit, with task details available at a deeper level.",
+        "width": 2400,
+        "height": 1706,
+        "rationale": "The value is in keeping state and responsibility legible together. A task’s position answers where it is in the workflow; its card provides enough context to decide whether to open it.",
+        "tradeoff": "Putting all task information on the board would make cards harder to scan. Showing only titles would remove useful context. Ownership and priority stay on the card, while deeper information belongs in task detail.",
+        "detail": "Status columns carry workflow state; compact card metadata carries ownership and priority."
+      },
+      {
+        "title": "Give depth a home at the task level.",
+        "body": "The task detail brings metadata, subtasks, attachments and discussion around one item. This gives the product somewhere to hold richer information without requiring every overview or board card to display it. It also connects the conversation about the work to the work itself.",
+        "image": "targe-task-detail.webp",
+        "alt": "Targe task details with subtasks and discussion",
+        "caption": "Task detail — deeper context belongs with the item rather than on every overview.",
+        "width": 2400,
+        "height": 1706,
+        "rationale": "The task is the appropriate unit for detailed coordination. People should be able to move from scanning the project into understanding a specific item without losing the relationship between the two.",
+        "tradeoff": "A lightweight board does not mean the whole product has to be shallow. Separating overview and detail preserves a readable board while allowing a task to carry the context needed to progress.",
+        "detail": "Subtasks, attachments and discussion are grouped within the task rather than distributed across overview panels."
+      }
+    ],
+    "collaboration": "Working across design and frontend meant that consistency had an implementation consequence. Repeated patterns needed to become reusable components, rather than slightly different versions of the same control. The project used React and TailwindCSS for the frontend, with backend architecture and integration led by my co-founder. The important boundary was between an interface state and a connected product behaviour: designing a task action is one part of the work; ensuring that it persists and behaves reliably across the service is another.",
+    "delivery": "The work brought the product direction, interface designs and frontend together around the dashboard, projects, boards and task details. The screens demonstrate the intended product experience and the contribution I made across design and frontend.",
+    "learning": "Founding a product makes prioritisation part of the design work. A feature can be useful in isolation and still make the overall experience harder to understand. The strongest thread in Targe is the route from overview to project to task. I would judge future additions by whether they strengthen that route and help someone complete real work.",
+    "next": "project-7",
+    "coverWidth": 2400,
+    "coverHeight": 1706,
+    "problem": "A task list alone leaves out project context. A dashboard can provide context but become another surface to interpret before reaching the work. The product direction was to connect these levels: an overview across initiatives, a project-level view of progress and a detailed place to work on an individual task. The challenge was deciding what belonged at each level.",
+    "approachTitle": "Build a connected workflow before expanding the feature set.",
+    "approach": "I structured the experience around entering a workspace, finding the relevant project and progressing individual tasks. That provided a product spine for the dashboard, projects view, board and task detail. The priority was a coherent everyday workflow; broader capabilities such as reporting and automation should earn their place by supporting that workflow, rather than defining the first experience.",
+    "principles": [
+      {
+        "title": "Orient",
+        "body": "See active projects, upcoming work and where attention may be needed."
+      },
+      {
+        "title": "Coordinate",
+        "body": "Understand ownership and task state within a project."
+      },
+      {
+        "title": "Do the work",
+        "body": "Open a task for its details, subtasks and conversation."
+      }
+    ],
+    "nextQuestions": "The next validation should test the core sequence with the intended audience: create a project, add and assign a task, move it through its states and return later to find what needs attention. That would help assess setup friction and whether the overview supports action."
+  },
+  "project-3": {
+    "kind": "concept",
+    "slug": "finto-digital-banking",
+    "name": "Finto",
+    "title": "Everyday banking, explored on mobile.",
+    "intro": "An independent digital banking concept spanning mobile interfaces, a marketing website and visual identity. The exploration connects everyday account tasks with a shared blue and violet design language.",
+    "role": "Product Designer",
+    "timeline": "2022",
+    "scope": "Mobile, web & visual identity",
+    "team": "Solo exploration",
+    "cover": "finto-cover.webp",
+    "coverAlt": "Original Finto cover composition with wallet, currency and verification screens on a violet background",
+    "coverWidth": 1800,
+    "coverHeight": 1368,
+    "next": "project-7",
+    "context": "The brief I set for this concept was to explore how everyday banking tasks could share a clear, recognisable visual language. The work centres on four moments: checking account information, reviewing exchange rates, understanding verification requirements and recognising that a payment has completed.",
+    "boundary": "A self-initiated design concept from 2022, focused on mobile interface design and visual identity. The work shown here is a solo exploration.",
+    "contribution": "I developed the mobile interface and supporting visual direction, extending the blue and violet palette across navigation, account surfaces, confirmation states and card concepts. The emphasis here is on the design choices visible in the work.",
+    "decisions": [
+      {
+        "title": "Give account information the first read.",
+        "body": "The wallet uses a prominent balance area, followed by payments, analytics and recent activity. The intention is to establish a clear starting point before introducing deeper tools. A lighter action panel separates the main account summary from the transaction list below."
+      },
+      {
+        "title": "Make verification requirements visible upfront.",
+        "body": "The verification screen presents the selfie, front and back of an identity document, and follow-up questions as a sequence. It explores how to explain the work ahead before someone begins. Numbered steps, individual cards and a consistent icon treatment give each requirement its own place in the flow."
+      },
+      {
+        "title": "Make the end of a payment recognisable.",
+        "body": "The payment confirmation combines a success symbol with the amount, recipient and a route to the receipt. A secondary action returns to the home screen. The intention is to connect a recognisable transaction outcome with useful next actions."
+      }
+    ],
+    "visual": "Blue and violet connect the app surfaces and card explorations, while lighter panels separate actions and transaction information. The card designs extend that identity beyond the screen. They are visual concepts, rather than issued payment cards.",
+    "reflection": "This exploration is strongest as a study of mobile hierarchy and visual consistency. To develop it further, I would narrow the product proposition, reconcile balance and exchange-rate details, and complete error and recovery states before testing the core tasks.",
+    "behance": "https://www.behance.net/gallery/144319179/Finto-Digital-Banking-Platform",
+    "webTitle": "Extending the concept to the web",
+    "webCopy": "The website explores a business-facing presentation of banking infrastructure, while the mobile screens show an end-user banking experience. Product mockups, feature sections and the blue and violet identity connect the two audiences visually. This is part of the original concept’s wider presentation, rather than a claim of an operating banking platform."
+  }
+}

@@ -1,0 +1,1 @@
+export default function robots(){const open=(process.env.PORTFOLIO_INDEXABLE ? process.env.PORTFOLIO_INDEXABLE==='true' : process.env.VERCEL_ENV==='production');return {rules:{userAgent:'*',allow:open?'/':undefined,disallow:open?undefined:'/'},sitemap:open?'https://www.ibrahimolukokun.com/sitemap.xml':undefined}}
