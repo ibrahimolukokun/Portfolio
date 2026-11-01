@@ -328,3 +328,9 @@
 .concept-page .case-cover{padding:0;background:none}.concept-page .case-cover img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}.concept-page .case-cover figcaption{padding-top:0}.concept-mobile>.case-text,.concept-web>.case-text{margin-bottom:28px}.concept-mobile,.concept-web{margin-bottom:56px}
 
 .work-grid .finto .window{background:transparent}.work-grid .finto .window img{object-fit:cover;object-position:center;background:transparent}
+
+/* Expanded mobile venture previews follow the screenshot height. */
+@media(max-width:700px){
+ .venture.active .venture-art.homepage-art{height:auto;padding:16px;flex:none;min-height:0}
+ .venture.active .homepage-art img,.venture.active .ui-art.homepage-art img{position:static;display:block;top:auto;left:auto;width:100%;max-width:100%;height:auto;transform:none;box-sizing:border-box}
+}
